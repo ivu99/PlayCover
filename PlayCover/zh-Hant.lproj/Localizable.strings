@@ -2,13 +2,13 @@
 "alert.app.delete" = "所有應用程式數據將被清除； 有些軟體可能需要重新下載數據。確定繼續？";
 
 /* (No Comment) */
-"alert.app.preferences" = "All game preferences will be deleted, You may need to configure your in-game settings(region) and wait a couple of seconds until game assets are located (They won't be downloaded the game will just verify them). Do you wish to continue?";
+"alert.app.preferences" = "所有應用程式的偏好設定將被刪除，確定要繼續嗎？";
 
 /* (No Comment) */
 "alert.appCacheCleared" = "應用程式數據應用已被清除！";
 
 /* (No Comment) */
-"alert.error" = "遇到了問題!";
+"alert.error" = "遇到了問題！";
 
 /* (No Comment) */
 "alert.errorImportKm" = "導入過程中出現問題！";
@@ -17,34 +17,16 @@
 "alert.kmImported" = "鍵盤映射佈局已導入！";
 
 /* (No Comment) */
-"alert.moveAppToApplications" = "PlayCover 必須位於應用程式文件夾。單擊以下按鈕讓 PlayCover 將自己移至應用程式文件夾。";
+"alert.moveAppToApplications.move" = "移至應用程式資料夾";
 
 /* (No Comment) */
-"alert.moveAppToApplications.move" = "移至應用程式文件夾";
-
-/* (No Comment) */
-"alert.restart" = "Please restart PlayCover.";
+"alert.restart" = "請重啟 PlayCover。";
 
 /* (No Comment) */
 "alert.storeAccount.regionIsNotValid" = "此帳號現所在的服務器與選項不符。打開遊戲，更改服務器並進入大門後保存，然後再試";
 
 /* (No Comment) */
-"alert.success" = "成功!";
-
-/* (No Comment) */
-"alert.wrongFileType" = "文件格式錯誤";
-
-/* (No Comment) */
-"alert.wrongFileType.message" = "請選擇 ipa 文件";
-
-/* (No Comment) */
-"bottomBar.notices" = "公告";
-
-/* (No Comment) */
-"bottomBar.notices.help" = "來自開發者的通知";
-
-/* (No Comment) */
-"bottomBar.setupViewButton" = "遇到了問題？";
+"alert.success" = "成功";
 
 /* (No Comment) */
 "button.Cancel" = "取消";
@@ -53,37 +35,22 @@
 "button.Close" = "關閉";
 
 /* (No Comment) */
-"button.Dismiss" = "隱藏";
-
-/* (No Comment) */
 "button.Install" = "安裝";
 
 /* (No Comment) */
-"button.OK" = "好";
+"button.OK" = "完成";
 
 /* (No Comment) */
 "button.Proceed" = "繼續";
 
 /* (No Comment) */
-"debug.crash" = "【調試】崩潰應用程式";
-
-/* (No Comment) */
-"error.corruptedIPA" = "此 ipa 文件已損壞，因為找不到 \"Info.plist\" 文件。";
-
-/* (No Comment) */
-"error.reinstallApp" = "請重新安裝 PlayCover";
+"error.corruptedIPA" = "此 .ipa 檔案已損毀，因為其中沒有包含 \"Info.plist\" 檔案。";
 
 /* (No Comment) */
 "error.waitInstallation" = "請等待安裝過程結束！";
 
 /* (No Comment) */
-"failedToFetchNotices" = "找不到公告；請檢查網路連接狀態。";
-
-/* (No Comment) */
-"logs.copied" = "日誌已複製";
-
-/* (No Comment) */
-"menubar.checkForUpdates" = "檢查更新";
+"menubar.checkForUpdates" = "檢查更新...";
 
 /* (No Comment) */
 "menubar.discord" = "Discord（社區交流平台）";
@@ -92,25 +59,13 @@
 "menubar.documentation" = "使用手冊";
 
 /* (No Comment) */
-"menubar.downloadMoreApps" = "下載更多應用程式";
-
-/* (No Comment) */
-"menubar.downloadMoreApps.help" = "使用這個網站下載更多應用程式來安裝";
-
-/* (No Comment) */
 "menubar.exportToSideloady" = "為 Sideloadly 導出";
-
-/* (No Comment) */
-"menubar.exportToSideloady.help" = "為來自 sideloady.io 的 Sideloady 導出 ipa 文件即可無需禁用 SIP 也可暢玩遊戲。";
 
 /* (No Comment) */
 "menubar.github" = "GitHub（源代碼發行網站）";
 
 /* (No Comment) */
 "menubar.log.copy" = "複製日誌";
-
-/* (No Comment) */
-"menubar.showAppLinks" = "顯示未安裝的應用";
 
 /* (No Comment) */
 "menubar.website" = "官網";
@@ -122,22 +77,16 @@
 "notification.appInstalled.message" = "馬上來看一看吧!";
 
 /* (No Comment) */
-"playapp.activateAccount" = "啟動帳號";
+"playapp.activateAccount" = "切換帳號";
 
 /* (No Comment) */
-"playapp.add" = "添加應用程式";
+"playapp.clearCache" = "清除應用程式資料";
 
 /* (No Comment) */
-"playapp.add.help" = "拖曳或或打開 ipa 文件以安裝。";
+"playapp.clearPreferences" = "清除應用程式偏好設定";
 
 /* (No Comment) */
-"playapp.clearCache" = "清除應用程式數據";
-
-/* (No Comment) */
-"playapp.clearPreferences" = "Clear app preferences";
-
-/* (No Comment) */
-"playapp.delete" = "刪除應用程式";
+"playapp.delete" = "解除安裝應用程式";
 
 /* (No Comment) */
 "playapp.deleteAccount" = "刪除帳號";
@@ -158,7 +107,7 @@
 "playapp.install.createWrapper" = "正在包裝應用程式...";
 
 /* (No Comment) */
-"playapp.install.finished" = "完成";
+"playapp.progress.finished" = "完成";
 
 /* (No Comment) */
 "playapp.install.installPlayTools" = "正在安裝 PlayTools...";
@@ -170,154 +119,52 @@
 "playapp.install.unzip" = "正在從文件中提取應用程式...";
 
 /* (No Comment) */
-"playapp.openCache" = "顯示應用程式數據";
+"playapp.openCache" = "顯示應用程式資料";
 
 /* (No Comment) */
-"playapp.settings" = "應用程式偏好設定";
+"playapp.settings" = "偏好設定";
 
 /* (No Comment) */
-"playapp.showInFinder" = "在Finder中查看";
+"playapp.showInFinder" = "在 Finder 中查看";
 
 /* (No Comment) */
 "playapp.storeCurrentAccount" = "保存現有帳號";
 
 /* (No Comment) */
-"playapp.update" = "更新應用程式";
+"preferences.button.checkForUpdates" = "檢查更新";
 
 /* (No Comment) */
-"preferences.button.checkForUpdates" = "Check for updates now...";
+"preferences.tab.updates" = "更新";
 
 /* (No Comment) */
-"preferences.tab.updates" = "Updates";
+"preferences.toggle.automaticUpdates" = "自動檢查更新";
 
 /* (No Comment) */
-"preferences.toggle.automaticUpdates" = "Automatically check for updates";
-
-/* (No Comment) */
-"search.search" = "搜尋...";
-
-/* (No Comment) */
-"settings.picker.displayRefreshRate" = "螢幕更新率";
-
-/* (No Comment) */
-"settings.picker.iosDevice" = "Select iOS device";
-
-/* (No Comment) */
-"settings.picker.screenSize" = "螢幕解析度";
-
-/* (No Comment) */
-"settings.reset" = "重置設定與鍵盤映射佈局";
-
-/* (No Comment) */
-"settings.resetCompleted" = "設定已被重置！";
+"settings.picker.iosDevice" = "選擇 iOS 裝置:";
 
 /* %.f */
-"settings.slider.mouseSensitivity" = "滑鼠敏感度: ";
+"settings.slider.mouseSensitivity" = "滑鼠靈敏度: %.f";
 
 /* (No Comment) */
-"settings.text.customHeight" = "Height";
+"settings.text.customHeight" = "高度";
 
 /* (No Comment) */
-"settings.text.customWidth" = "Width";
+"settings.text.customWidth" = "寬度";
 
 /* (No Comment) */
-"settings.toggle.adaptiveDisplay" = "適配顯示器";
-
-/* (No Comment) */
-"settings.toggle.adaptiveDisplay.info" = "為 Mac 的內置顯示器適配應用程式窗口。";
-
-/* (No Comment) */
-"settings.toggle.autoWindowResize" = "啟用自動窗口大小調整";
-
-/* (No Comment) */
-"settings.toggle.customSize" = "Enable custom window size";
-
-/* (No Comment) */
-"settings.toggle.disableDisplaySleep" = "Disable display sleep";
-
-/* (No Comment) */
-"settings.toggle.disableDisplaySleep.info" = "Prevent display from turning off while this app is running";
-
-/* (No Comment) */
-"settings.toggle.gaming" = "遊戲模式";
+"settings.toggle.disableDisplaySleep" = "停用螢幕休眠";
 
 /* (No Comment) */
 "settings.toggle.jbBypass" = "啟用繞過越獄檢測（預覽）";
 
 /* (No Comment) */
-"settings.toggle.jbBypass.info" = "嘗試繞過遊戲的防越獄系統（不一定總是有效）";
-
-/* (No Comment) */
 "settings.toggle.km" = "啟用鍵盤映射佈局";
 
 /* (No Comment) */
-"settings.toggle.km.info" = "為觸控螢幕設計的遊戲增添鍵鼠支持。使用 Command + K 啟用鍵盤映射佈局編輯器。";
+"soundAlert.failureText" = "未能成功更改現有音訊輸出設備取樣率為 48 KHz。您可以在 “音訊 MIDI 設定” 應用程式中自行手動設定";
 
 /* (No Comment) */
-"setup.enterLoginPassword" = "請輸入管理員登錄密碼";
-
-/* (No Comment) */
-"setup.enterLoginPassword.info" = "輸入用來登錄這台 Mac 的密碼。";
-
-/* (No Comment) */
-"setup.incorrectPassword" = "密碼錯誤，請重試";
-
-/* (No Comment) */
-"setup.requireReboot" = "Please restart your Mac for changes to take effect.";
-
-/* (No Comment) */
-"setupView.bilibili" = "BiliBili";
-
-/* (No Comment) */
-"setupView.header" = "按照以下指示操作即可修復常見問題";
-
-/* (No Comment) */
-"setupView.pressButtonAndEnterPassword" = "請從以下按鈕禁用SIP並輸入 Mac 登錄密碼。";
-
-/* (No Comment) */
-"setupView.pressButtonAndEnterPassword.button" = "禁用SIP";
-
-/* (No Comment) */
-"setupView.step1" = "1) 將 Mac 關機";
-
-/* (No Comment) */
-"setupView.step2" = "2) 等待20秒以讓 Mac 完全關機, 然後按住電源按鈕";
-
-/* (No Comment) */
-"setupView.step3" = "3) 當 \"正在加載啟動選項\" 在蘋果圖標底下出現時, 鬆開電源按鈕";
-
-/* (No Comment) */
-"setupView.step4" = "4) 點擊 恢復模式";
-
-/* (No Comment) */
-"setupView.step5" = "5) 在恢復模式下， 打開終端機 (菜單欄 -> 常用工具 -> 終端機)";
-
-/* (No Comment) */
-"setupView.step6" = "6) 輸入: ";
-
-/* (No Comment) */
-"setupView.step7" = "7) 輸入並執行上述命令後， 輸入 Mac 的用戶登錄密碼（密碼字樣不會顯示在螢幕上）";
-
-/* (No Comment) */
-"setupView.step8" = "8) 重啟 Mac";
-
-/* (No Comment) */
-"setupView.step9" = "如果遇到了任何錯誤或問題，重複上述操作";
-
-/* (No Comment) */
-"setupView.subheader" = "解決帳號無法登錄，應用程式閃退等問題";
-
-/* (No Comment) */
-"setupView.vidTutorials" = "影片教程";
-
-/* (No Comment) */
-"setupView.youtube" = "YouTube";
-
-/* (No Comment) */
-"soundAlert.failureText" = "Failed to set current output device's sample rate to 48 KHz. You can manually set sample rate in the Audio MIDI Setup app";
-
-/* (No Comment) */
-"soundAlert.informativeText" = "現有的音訊設備並無 48 或者 44.1 KHz 取樣率! 程式可能會崩潰。你希望把現有的音響設備設定成 48 KHz 取樣率嗎?";
+"soundAlert.informativeText" = "現有的音訊設備並無 48 或 44.1 KHz 取樣率! 程式可能會崩潰。你希望把現有的音響設備設定成 48 KHz 取樣率嗎?";
 
 /* (No Comment) */
 "soundAlert.messageText" = "檢測到聲音設定有問題!";
@@ -344,10 +191,10 @@
 "storeAccount.selectAccRegion.asia" = "亞服";
 
 /* (No Comment) */
-"storeAccount.selectAccRegion.cht" = "TW, HK, MO";
+"storeAccount.selectAccRegion.cht" = "港澳臺服";
 
 /* (No Comment) */
-"storeAccount.selectAccRegion.euro" = "歐福";
+"storeAccount.selectAccRegion.euro" = "歐服";
 
 /* (No Comment) */
 "storeAccount.selectAccRegion.usa" = "美服";
@@ -357,21 +204,203 @@
 
 /* (No Comment) */
 "storeAccount.storeAcc" = "保存一個帳號";
-
-/* (No Comment) */
-"xcode.install.failed" = "Xcode 終端工具安裝失敗";
-
-/* (No Comment) */
-"xcode.install.message" = "開始之前，你需要先安裝 Xcode 終端工具並重啟此應用程式";
-
-/* (No Comment) */
-"xcode.install.progress" = "Installing Xcode Command Line Tools";
-
-/* (No Comment) */
-"xcode.install.progress.subtext" = "May take around 5-10 minutes depending on internet speed";
-
-/* (No Comment) */
-"xcode.install.success" = "Xcode 終端工具安裝成功";
-
-/* (No Comment) */
-"settings.toggle.portraitMode" = "Portrait mode";
+"storeAccount.alert.restoreAccount" = "確定要還原帳號？";
+"button.Quit" = "離開";
+"settings.info.bundleName" = "Bundle 名稱:";
+"playapp.exportKmPanel.fieldLabel" = "PlayMap 名稱:";
+"sidebar.appLibrary" = "App資料庫";
+"sidebar.ipaLibrary" = "IPA資料庫";
+"storeAccount.alert.restoreAccount.button" = "還原帳號";
+"storeAccount.alert.restoreAccount.msg" = "這將會覆蓋你目前已登入的帳號。";
+"storeAccount.alert.deleteAccount" = "確定要刪除帳號嗎？";
+"storeAccount.alert.deleteAccount.button" = "刪除帳號";
+"alert.moveAppToApplications.title" = "是否移動到應用程式資料夾？";
+"alert.moveAppToApplications.subtitle" = "PlayCover必須在應用程式資料夾中才能正常運作。點擊下方按鈕會使PlayCover自動移至應用程式資料夾。";
+"error.appEncrypted" = "此應用程式已被加密！請使用未加密的IPA文件。現已不再支援使用iMazing輸出的IPA檔案！";
+"error.appCorrupted" = "此IPA檔案中包含一些錯誤。請嘗試使用其他IPA檔案。";
+"error.appProhibited" = "在PlayCover中使用這個應用程式可能會遭到封禁！";
+"error.noGenshinAccount" = "無法找到原神帳號！你是否已在該應用程式中登入帳號？";
+"settings.title" = "%@ 設定";
+"settings.tab.info" = "詳細資料";
+"settings.tab.km" = "鍵盤映射佈局";
+"settings.toggle.km.help" = "為僅可透過觸控螢幕操控的遊戲添加鍵盤支援。使用 Command + K 開啟編輯器選單。";
+"settings.tab.graphics" = "影像設置";
+"settings.picker.adaptiveRes" = "解析度:";
+"settings.picker.adaptiveRes.help" = "修改應用程式的視窗解析度";
+"settings.picker.adaptiveRes.0" = "預設解析度";
+"settings.picker.adaptiveRes.1" = "自動（根據螢幕解析度）";
+"settings.picker.adaptiveRes.5" = "自定義";
+"settings.picker.aspectRatio" = "長寬比:";
+"settings.toggle.disableDisplaySleep.help" = "防止螢幕在應用程式運行期間關閉";
+"settings.info.executableName" = "可執行檔名稱:";
+"settings.toggle.jbBypass.help" = "在部分遊戲中嘗試繞過越獄檢測（無法保證任何時候都正確運作）";
+"settings.info.displayName" = "顯示名稱:";
+"settings.info.bundleIdentifier" = "Bundle ID:";
+"settings.info.minimumOSVersion" = "最低作業系統版本:";
+"settings.info.url" = "位置:";
+"settings.resetSettings" = "重置偏好設定";
+"settings.resetKm" = "重置鍵盤映射佈局";
+"settings.resetSettingsCompleted" = "偏好設定已被重置為預設值！";
+"settings.resetKmCompleted" = "鍵盤映射佈局已被重置！";
+"settings.tab.misc" = "雜項";
+"settings.button.discord" = "自訂 Discord 動態";
+"settings.button.clearActivity" = "清除自定義動態";
+"settings.text.applicationID" = "應用程式 ID";
+"settings.text.details" = "詳細資料";
+"settings.text.details.help" = "標題下方首列";
+"settings.text.image" = "影像";
+"settings.text.image.help" = "連結至影像或開發人員門戶中的資產名稱";
+"settings.text.state" = "狀態";
+"settings.text.state.help" = "標題下方第二列";
+"settings.toggle.discord" = "啟用Discord動態";
+"settings.toggle.hud" = "啟用Metal HUD";
+"settings.info.bundleVersion" = "Bundle 版本:";
+"playapp.deleteConfirm" = "解除安裝";
+"playapp.deleteMessage" = "你是否確定要解除安裝 %@？";
+"alert.legacyImport.title" = "檢測到舊版應用程式設置！";
+"alert.legacyImport.subtitle" = "檢測到舊版應用程式設置及鍵盤映射佈局。是否要把這些檔案轉換為新版格式？";
+"button.Convert" = "轉換";
+"settings.text.detectedResolution" = "檢測到的解析度:";
+"playapp.add" = "新增應用程式";
+"alert.wrongFileType.title" = "錯誤的檔案類型！";
+"alert.wrongFileType.subtitle" = "PlayCover 只可以安裝有效的 .ipa 檔案。";
+"playapp.addSource" = "新增來源";
+"ipaLibrary.noSources.title" = "尚未新增 IPA 來源";
+"ipaLibrary.noSources.subtitle" = "您目前沒有新增 IPA 來源。點擊下方的按鈕來新增一個。";
+"ipaLibrary.noSources.button" = "新增來源";
+"ipaLibrary.noNetworkConnection.toast" = "沒有網路連線！";
+"preferences.tab.ipasource" = "IPA 來源";
+"preferences.button.addSource" = "新增來源";
+"preferences.button.deleteSource" = "刪除來源";
+"preferences.button.moveSourceUp" = "上移來源";
+"preferences.button.moveSourceDown" = "下移來源";
+"preferences.popover.valid" = "鏈結有效";
+"preferences.popover.badurl" = "無效的鏈結!";
+"preferences.popover.badjson" = "JSON 無效或不存在！";
+"preferences.textfield.url" = "來源URL鏈結...";
+"playapp.download.downloading" = "下載中";
+"error.waitDownload" = "請等待下載完成！";
+"preferences.tab.uninstall" = "解除安裝";
+"preferences.whenUninstalling" = "解除安裝同時：";
+"preferences.toggle.showUninstall" = "顯示警告提示";
+"preferences.toggle.clearAppData" = "清理APP資料";
+"preferences.toggle.removeKeymap" = "刪除鍵盤映射";
+"preferences.toggle.removeSetting" = "移除設定";
+"preferences.toggle.removeEntitlements" = "移除授權";
+"preferences.button.pruneFiles" = "未使用的檔案";
+"preferences.prune.alert" = "您確定要刪除所有未被使用的檔案嗎？";
+"preferences.prune.message" = "這將刪除所有未使用的檔案，包括設定、鍵盤映射、授權和應用程式數據";
+"playapp.progress.failed" = "失敗";
+"alert.supression" = "你可以在 PlayCover 偏好設定中更改";
+"menubar.clearCache" = "清理快取";
+"preferences.tab.install" = "安裝";
+"preferences.toggle.showInstallPopup" = "顯示安裝 PlayTools 彈窗";
+"preferences.toggle.alwaysInstallPlayTools" = "總是安裝 PlayTools";
+"settings.removePlayTools" = "移除 PlayTools";
+"settings.info.playTools" = "已安裝PlayTools:";
+"alert.install.injectPlayTools" = "注入 PlayTools";
+"button.Yes" = "是";
+"button.No" = "否";
+"settings.noPlayTools" = "該應用程式沒有安裝PlayTools";
+"playapp.refreshSources" = "重新整理來源";
+"error.appMaliciousProhibited" = "此應用程式在 Mac 上存在惡意行為，使用它可能會使您的設備處於無法啟動的狀態，因此它會被 PlayCover 封鎖。 （正在解除安裝...）";
+"alert.install.injectPlayToolsQuestion" = "你要在這個應用程序裡面植入 PlayTools 嗎？";
+"alert.install.playToolsInformative" = "PlayTools是一個讓您將按鍵綁定到螢幕觸控，自定義顯示分辨率，和更多的工具，但它有可能會讓某些應用程序崩潰";
+"button.Help" = "幫助";
+"button.Dismiss" = "關閉";
+"state.enabled" = "啟用";
+"state.disabled" = "禁用";
+"state.pendingReboot" = "等待重啟";
+"menubar.configSigning" = "配置簽署";
+"configSigning.header" = "配置應用程式包簽名";
+"configSigning.subtext" = "應用程式包簽名幫助修復需要依靠正確 團隊 ID\n來處理身分驗證等操作的應用程序。\n這個功能有可能會帶來風險。\n\n因此，我們建議在不必要的情況下禁用它";
+"configSigning.info.SIP" = "部分的 系統完整性保護（SIP）需要禁用，以便關閉 蘋果移動文件完整性（AMFI）.";
+"configSigning.info.SIPHeader" = "系統完整性保護";
+"configSigning.info.AMFI" = "蘋果移動文件完整性（AMFI）需要關閉以允許應用程序假簽名，以便它們使用正確的 團隊ID 運行";
+"configSigning.info.AMFIHeader" = "蘋果移動檔案完整性（AMFI）";
+"configSigning.action.shutdown" = "將我的 Mac 關機";
+"configSigning.action.copyCommand" = "複製指令至剪貼板";
+"configSigning.action.restart" = "將我的 Mac 重啟";
+"configSigning.step.disableSIP" = "請從恢復模式禁用SIP";
+"configSigning.step.disableAMFI" = "請禁用AMFI";
+"configSigning.step.AMFIreboot" = "蘋果移動文件完整性 已禁用。請重啟電腦";
+"configSigning.step.complete" = "應用程式包簽名已成功配置";
+"configSigning.alert.copied" = "命令已複製！";
+"configSigning.alert.info" = "請在終端機內貼上並執行此命令。稍後你的 Mac 將重啟";
+"alert.power.title" = "低電量模式已啟用！";
+"alert.power.subtitle" = "有些應用程序在低電量模式開啟的情況下不能使用。建議把它禁用。";
+"ipaLibrary.version.older" = "此版本比你已經安裝的版本更舊";
+"ipaLibrary.version.same" = "應用程式已經安裝了";
+"ipaLibrary.version.newer" = "此版本比你已經安裝的更新";
+"ipaLibrary.alert.download" = "你確定要下載這個版本的 %@ 嗎？";
+"ipaLibrary.download" = "下載";
+"alert.differentBundleIdKeymap.message" = "這個鍵盤映射文件可能是為其他應用程序創建的。";
+"alert.differentBundleIdKeymap.text" = "你確定你要導入這個鍵盤映射文件嗎？";
+"settings.text.debugger" = "調試器：";
+"settings.toggle.lldb" = "用 LLDB 高性能調試器打開";
+"settings.toggle.lldbWithTerminal" = "用終端機打開";
+"settings.unavailable.hud" = "Metal HUD 不可用";
+"settings.playChain.debugging" = "PlayChain 調試";
+"error.failedToStripBinary" = "無法在通用二進制文件中檢索到 ARM64 架構！";
+"settings.playChain.enable" = "啟用 PlayChain (試驗階段)";
+"settings.playChain.help" = "在此應用程序啟用 PlayChain 將使應用程式（部分）使用 Apple Keychain 服務";
+"playapp.noSources.title" = "尚未安裝任何 IPA";
+"playapp.noSources.subtitle" = "暫時沒有安裝任何 IPA 文件。點擊下方的按鈕來導入一個。";
+"settings.tab.bypasses" = "繞道";
+"playapp.download.integrityCheck" = "驗證檔案的完整性：";
+"playapp.download.differentChecksum" = "checksum 不相符！是否繼續安裝？";
+"playapp.download.differentChecksumDesc" = "預期「%@」，得到「%@」";
+"playapp.progress.canceled" = "已取消";
+"playapp.importIPA" = "導入 IPA";
+"preferences.popover.duplicate" = "複製連結";
+"button.Reload" = "刷新";
+"playapp.clearPlayChain" = "清除 PlayChain 資料";
+"ipaLibrary.noNetworkConnection.required" = "連接實際網路以查看 IPA Library";
+"preferences.toggle.removePlayChain" = "移除 PlayChain";
+"alert.app.clearPlayChain" = "所有 PlayChain 數據將被清除。您可能需要重新登錄應用程式。 您還希望繼續嗎?";
+"settings.highResolution" = "高畫質可能會導致閃退";
+"settings.picker.windowFix" = "修復視窗模式顯示問題";
+"settings.picker.windowFix.help" = "啟用視窗修復也許可以讓你的程序正常顯示";
+"settings.picker.windowFixMethod.0" = "正常";
+"settings.picker.windowFixMethod.1" = "備用";
+"preferences.popover.checking" = "檢查 URL";
+"settings.toggle.introspection" = "插入內檢庫";
+"settings.toggle.introspection.help" = "將系統自檢庫增加到應用程式中。修復了應用程式不能正確啓動的一些已知問題";
+"settings.picker.scaler" = "解像度縮放器";
+"settings.toggle.rootWorkDir" = "在根目錄下啓動應用程式";
+"keycover.masterPassword" = "主密碼";
+"keycover.button.changePassword" = "更改主密碼";
+"button.Enable" = "啟用";
+"button.Reset" = "重設";
+"button.Unlock" = "解鎖";
+"settings.toggle.rootWorkDir.help" = "將應用程式的工作目錄改為/，就像在 iOS 上一樣。如果應用程式表現不正常，請將其關閉";
+"keycover.confirmMasterPassword" = "確認主密碼";
+"keycover.oldMasterPassword" = "目前主密碼";
+"keycover.error.blankPassword" = "密碼不能留空";
+"keycover.error.notMatch" = "密碼不符合";
+"keycover.error.incorrectPassword" = "密碼不正確";
+"keycover.status.title" = "KeyCover 狀態：";
+"keycover.status.managedPassword" = "已通過受管理密碼啓用";
+"keycover.status.userPassword" = "已通過使用者密碼啓用";
+"keycover.status.chainCount" = "KeyCover Chain 狀態： ";
+"keycover.status.unlockedCount %@ %@" = "%@ 個已解鎖鏈（共 %@ 個）";
+"keycover.button.lockAll" = "鎖定所有鏈";
+"keycover.toggle.startupPrompt" = "啓動時提示使用 KeyCover";
+"keycover.toggle.startupPrompt.help" = "當你啓動應用程式時，KeyCover 會彈出視窗要求主密碼。如果停用這個功能，則當你啓動使用 PlayChain 的應用程式時才會彈出視窗。";
+"keycover.setup.useGeneratedKey" = "已自動管理";
+"keycover.setup.useUserKey" = "使用我自己的鑰匙";
+"keycover.setup.encryptionKey" = "加密密鑰： ";
+"keycover.setupPrompt.title" = "輸入一個用於 KeyCover 的主密碼";
+"keycover.changePasswordPrompt.title" = "輸入你的舊主密碼和新密碼，以更新你的 KeyCover 加密密鑰";
+"keycover.removePrompt.title" = "輸入主密碼以刪除 KeyCover 加密";
+"keycover.unlockPrompt.title" = "輸入你的主密碼以解鎖 KeyCover";
+"keycover.alert.title" = "鑰匙圈未解鎖";
+"keycover.alert.content" = "已停用目前工作階段的密鑰圈存取";
+"settings.toggle.autoKM" = "智能按鍵映射";
+"settings.toggle.autoKM.help" = "當感應到文本輸入時，自動停用按鍵映射";
+"settings.applicationCategoryType" = "應用程式類型";
+"settings.toggle.iosFrameworks" = "強制插入 iOS 框架";
+"settings.info.alias" = "別名：";
+"settings.toggle.enableScrollWheel.help" = "在鍵盤映射中啟用滾輪";
+"settings.toggle.iosFrameworks.help" = "將系統 ios 庫新增至應用程式。 已知修復某些應用程式找不到 ios 框架的問題";
+"settings.toggle.enableScrollWheel" = "啟用滾輪";

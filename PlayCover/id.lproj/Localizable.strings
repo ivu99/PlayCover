@@ -1,377 +1,426 @@
 /* (No Comment) */
-"alert.app.delete" = "All app data will be erased. You may need to download app files again. Do you wish to continue?";
+"alert.app.delete" = "Semua data aplikasi akan dihapus. Anda mungkin perlu mengunduh file aplikasi lagi. Apakah anda ingin melanjutkan?";
 
 /* (No Comment) */
-"alert.app.preferences" = "All game preferences will be deleted, You may need to configure your in-game settings(region) and wait a couple of seconds until game assets are located (They won't be downloaded the game will just verify them). Do you wish to continue?";
+"alert.app.preferences" = "Semua preferensi dalam aplikasi akan dihapus. Apakah anda ingin melanjutkan?";
 
 /* (No Comment) */
-"alert.appCacheCleared" = "App data has been cleared!";
+"alert.appCacheCleared" = "Data aplikasi telah dihapus!";
 
 /* (No Comment) */
-"alert.error" = "Some error happened!";
+"alert.error" = "Terjadi kesalahan!";
 
 /* (No Comment) */
-"alert.errorImportKm" = "Error occured when importing!";
+"alert.errorImportKm" = "Error ketika sedang impor!";
 
 /* (No Comment) */
-"alert.kmImported" = "Keymapping imported!";
+"alert.kmImported" = "Pemetaan kontrol terimpor!";
 
 /* (No Comment) */
-"alert.moveAppToApplications" = "PlayCover must be in the Applications folder. Press the button below to let PlayCover move itself to /Applications.";
+"alert.moveAppToApplications.move" = "Pindah ke folder aplikasi";
 
 /* (No Comment) */
-"alert.moveAppToApplications.move" = "Move to /Applications";
+"alert.restart" = "Mohon mulai ulang PlayCover.";
 
 /* (No Comment) */
-"alert.restart" = "Please restart PlayCover.";
+"alert.storeAccount.regionIsNotValid" = "Akun saat ini diatur ke wilayah yang berbeda. Luncurkan game, ubah wilayah, dan lewati gerbang untuk menyimpan. Kemudian coba lagi";
 
 /* (No Comment) */
-"alert.storeAccount.regionIsNotValid" = "The current account is set to a different Region. Launch the game, Change the region, and pass through the gates to save. Then try again";
+"alert.success" = "Berhasil";
 
 /* (No Comment) */
-"alert.success" = "Success!";
+"button.Cancel" = "Batal";
 
 /* (No Comment) */
-"alert.wrongFileType" = "Wrong file type";
+"button.Close" = "Tutup";
 
 /* (No Comment) */
-"alert.wrongFileType.message" = "Choose an .ipa file";
+"button.Install" = "Instalasi";
 
 /* (No Comment) */
-"bottomBar.notices" = "Notices";
+"button.OK" = "Oke";
 
 /* (No Comment) */
-"bottomBar.notices.help" = "News and announcements from the developers";
+"button.Proceed" = "Lanjutkan";
 
 /* (No Comment) */
-"bottomBar.setupViewButton" = "Experiencing issues?";
+"error.corruptedIPA" = "File .ipa ini rusak. File tidak berisi \"Info.plist\".";
 
 /* (No Comment) */
-"button.Cancel" = "Cancel";
+"error.waitInstallation" = "Harap tunggu hingga penginstalan selesai!";
 
 /* (No Comment) */
-"button.Close" = "Close";
-
-/* (No Comment) */
-"button.Dismiss" = "Dismiss";
-
-/* (No Comment) */
-"button.Install" = "Install";
-
-/* (No Comment) */
-"button.OK" = "OK";
-
-/* (No Comment) */
-"button.Proceed" = "Proceed";
-
-/* (No Comment) */
-"debug.crash" = "[DEBUG] Crash app";
-
-/* (No Comment) */
-"error.corruptedIPA" = "This .ipa file is corrupted. It does not contains \"Info.plist\" file.";
-
-/* (No Comment) */
-"error.reinstallApp" = "Please reinstall PlayCover";
-
-/* (No Comment) */
-"error.waitInstallation" = "Please wait for the current installation to finish!";
-
-/* (No Comment) */
-"failedToFetchNotices" = "Failed to find notices. Please check your internet connection.";
-
-/* (No Comment) */
-"logs.copied" = "Logs copied";
-
-/* (No Comment) */
-"menubar.checkForUpdates" = "Check for updates";
+"menubar.checkForUpdates" = "Periksa untuk pembaruan...";
 
 /* (No Comment) */
 "menubar.discord" = "Discord";
 
 /* (No Comment) */
-"menubar.documentation" = "Documentation";
+"menubar.documentation" = "Dokumentasi";
 
 /* (No Comment) */
-"menubar.downloadMoreApps" = "Download more apps";
-
-/* (No Comment) */
-"menubar.downloadMoreApps.help" = "Use this site to download apps for installation";
-
-/* (No Comment) */
-"menubar.exportToSideloady" = "Export to Sideloadly";
-
-/* (No Comment) */
-"menubar.exportToSideloady.help" = "Export .ipa for Sideloady from sideloady.io which does not need SIP to be disabled for apps and games to work.";
+"menubar.exportToSideloady" = "Ekspor ke Sideloadly";
 
 /* (No Comment) */
 "menubar.github" = "GitHub";
 
 /* (No Comment) */
-"menubar.log.copy" = "Copy Logs";
+"menubar.log.copy" = "Salin Log";
 
 /* (No Comment) */
-"menubar.showAppLinks" = "Show app links";
+"menubar.website" = "Situs";
 
 /* (No Comment) */
-"menubar.website" = "Website";
+"notification.appInstalled" = "Aplikasi terpasang!";
 
 /* (No Comment) */
-"notification.appInstalled" = "App installed!";
+"notification.appInstalled.message" = "Lihat di PlayCover!";
 
 /* (No Comment) */
-"notification.appInstalled.message" = "Check it out in PlayCover!";
+"playapp.activateAccount" = "Ganti akun";
 
 /* (No Comment) */
-"playapp.activateAccount" = "Restore an account";
+"playapp.clearCache" = "Hapus data app";
 
 /* (No Comment) */
-"playapp.add" = "Add app";
+"playapp.clearPreferences" = "Hapus preferensi aplikasi";
 
 /* (No Comment) */
-"playapp.add.help" = "Drag or open an app file to install.";
+"playapp.delete" = "Uninstall aplikasi";
 
 /* (No Comment) */
-"playapp.clearCache" = "Clear app data";
+"playapp.deleteAccount" = "Hapus akun";
 
 /* (No Comment) */
-"playapp.clearPreferences" = "Clear app preferences";
+"playapp.exportKm" = "Ekspor pemetaan kontrol";
 
 /* (No Comment) */
-"playapp.delete" = "Delete app";
+"playapp.importKm" = "Impor pemetaan kontrol";
 
 /* (No Comment) */
-"playapp.deleteAccount" = "Delete an account";
+"playapp.install.addToLib" = "Menambah aplikasi ke perpustakaan...";
 
 /* (No Comment) */
-"playapp.exportKm" = "Export keymapping";
+"playapp.install.copy" = "Menyalin aplikasi...";
 
 /* (No Comment) */
-"playapp.importKm" = "Import keymapping";
+"playapp.install.createWrapper" = "Membuat pembungkus aplikasi...";
 
 /* (No Comment) */
-"playapp.install.addToLib" = "Adding app to library...";
+"playapp.progress.finished" = "Selesai";
 
 /* (No Comment) */
-"playapp.install.copy" = "Copying app...";
+"playapp.install.installPlayTools" = "Menginstall PlayTools...";
 
 /* (No Comment) */
-"playapp.install.createWrapper" = "Creating app wrapper...";
+"playapp.install.signing" = "Mendaftarkan aplikasi...";
 
 /* (No Comment) */
-"playapp.install.finished" = "Finished";
+"playapp.install.unzip" = "Mengekstrak aplikasi dari file .ipa...";
 
 /* (No Comment) */
-"playapp.install.installPlayTools" = "Installing PlayTools...";
+"playapp.openCache" = "Buka data app";
 
 /* (No Comment) */
-"playapp.install.signing" = "Signing app...";
+"playapp.settings" = "Pengaturan";
 
 /* (No Comment) */
-"playapp.install.unzip" = "Extracting app from .ipa file...";
+"playapp.showInFinder" = "Tunjukan di Finder";
 
 /* (No Comment) */
-"playapp.openCache" = "Open app data";
+"playapp.storeCurrentAccount" = "Simpan akun";
 
 /* (No Comment) */
-"playapp.settings" = "App preferences";
+"preferences.button.checkForUpdates" = "Periksa pembaruan";
 
 /* (No Comment) */
-"playapp.showInFinder" = "Show in Finder";
+"preferences.tab.updates" = "Pembaruan";
 
 /* (No Comment) */
-"playapp.storeCurrentAccount" = "Store current account";
+"preferences.toggle.automaticUpdates" = "Periksa pembaruan secara otomatis";
 
 /* (No Comment) */
-"playapp.update" = "Update app";
+"settings.button.discord" = "Aktivitas Discord khusus";
 
 /* (No Comment) */
-"preferences.button.checkForUpdates" = "Check for updates now...";
+"settings.button.clearActivity" = "Hapus aktivitas khusus";
 
 /* (No Comment) */
-"preferences.tab.updates" = "Updates";
-
-/* (No Comment) */
-"preferences.toggle.automaticUpdates" = "Automatically check for updates";
-
-/* (No Comment) */
-"search.search" = "Search...";
-
-/* (No Comment) */
-"settings.picker.displayRefreshRate" = "Screen refresh rate";
-
-/* (No Comment) */
-"settings.picker.iosDevice" = "Select iOS device";
-
-/* (No Comment) */
-"settings.picker.screenSize" = "Display resolution";
-
-/* (No Comment) */
-"settings.reset" = "Reset settings and keymapping";
-
-/* (No Comment) */
-"settings.resetCompleted" = "Settings have been reverted back to default!";
+"settings.picker.iosDevice" = "Perangkat iOS:";
 
 /* %.f */
-"settings.slider.mouseSensitivity" = "Mouse sensitivity: ";
+"settings.slider.mouseSensitivity" = "Sensitivitas mouse: %.f";
 
 /* (No Comment) */
-"settings.text.customHeight" = "Height";
+"settings.text.applicationID" = "ID aplikasi";
 
 /* (No Comment) */
-"settings.text.customWidth" = "Width";
+"settings.text.customHeight" = "Tinggi";
 
 /* (No Comment) */
-"settings.toggle.adaptiveDisplay" = "Adaptive display";
+"settings.text.customWidth" = "Lebar";
 
 /* (No Comment) */
-"settings.toggle.adaptiveDisplay.info" = "Adapts and scales app window to fit the built-in Mac display.";
+"settings.text.details" = "Rincian";
 
 /* (No Comment) */
-"settings.toggle.autoWindowResize" = "Enable auto window resize";
+"settings.text.details.help" = "Baris pertama di bawah judul";
 
 /* (No Comment) */
-"settings.toggle.customSize" = "Enable custom window size";
+"settings.text.image" = "Gambar";
 
 /* (No Comment) */
-"settings.toggle.disableDisplaySleep" = "Disable display sleep";
+"settings.text.image.help" = "Tautan ke gambar atau nama aset portal Dev";
 
 /* (No Comment) */
-"settings.toggle.disableDisplaySleep.info" = "Prevent display from turning off while this app is running";
+"settings.text.state" = "Katakan";
 
 /* (No Comment) */
-"settings.toggle.gaming" = "Gaming Mode";
+"settings.text.state.help" = "Baris kedua di bawah judul";
 
 /* (No Comment) */
-"settings.toggle.jbBypass" = "Enable Jailbreak Bypass (Alpha)";
+"settings.toggle.disableDisplaySleep" = "Nonaktifkan tampilan tidur";
 
 /* (No Comment) */
-"settings.toggle.jbBypass.info" = "Attempts to bypass Jailbreak Detection in some games (No guarentee to work all the time)";
+"settings.toggle.discord" = "Aktifkan aktivitas Discord";
 
 /* (No Comment) */
-"settings.toggle.km" = "Enable keymapping";
+"settings.toggle.jbBypass" = "Aktifkan Lewati Jailbreak (Alpha)";
 
 /* (No Comment) */
-"settings.toggle.km.info" = "Add keyboard support to touch-only games. Use Command + K to open editor menu.";
+"settings.toggle.km" = "Pemetaan kontrol";
 
 /* (No Comment) */
-"setup.enterLoginPassword" = "Please enter your user password";
+"soundAlert.failureText" = "Gagal menyetel laju sampel perangkat keluaran saat ini ke 48 KHz. Anda dapat mengatur sample rate secara manual di aplikasi 'Audio MIDI Setup'";
 
 /* (No Comment) */
-"setup.enterLoginPassword.info" = "Enter the password used to unlock your Mac.";
+"soundAlert.informativeText" = "Perangkat keluaran Anda saat ini tidak memiliki laju sampel 48 atau 44,1 KHz! Kesalahan mungkin terjadi. Apakah Anda ingin mengubah laju sampel perangkat keluaran Anda saat ini menjadi 48 KHz?";
 
 /* (No Comment) */
-"setup.incorrectPassword" = "Password incorrect. Please try again";
+"soundAlert.messageText" = "Pengaturan audio salah terdeteksi!";
 
 /* (No Comment) */
-"setup.requireReboot" = "Please restart your Mac for changes to take effect.";
+"soundAlert.successText" = "Laju sampel perangkat keluaran saat ini disetel ke 48 KHz";
 
 /* (No Comment) */
-"setupView.bilibili" = "BiliBili";
+"storeAccount.deleteAcc" = "Hapus akun";
 
 /* (No Comment) */
-"setupView.header" = "Follow steps below for fixing common issues";
+"storeAccount.nameOfAcc" = "Nama akunmu";
 
 /* (No Comment) */
-"setupView.pressButtonAndEnterPassword" = "Please disable SIP from below and enter your Mac login password.";
+"storeAccount.nameOfAcc.textfieldPlaceholder" = "Nama akun...";
 
 /* (No Comment) */
-"setupView.pressButtonAndEnterPassword.button" = "Disable SIP";
+"storeAccount.selectAcc" = "Pilih akun";
 
 /* (No Comment) */
-"setupView.step1" = "1) Shutdown your Mac";
+"storeAccount.selectAccRegion" = "Pilih wilayah akun";
 
 /* (No Comment) */
-"setupView.step2" = "2) Wait for at least 20 seconds for Mac to fully shutdown, then hold the power button";
+"storeAccount.selectAccRegion.asia" = "Asian";
 
 /* (No Comment) */
-"setupView.step3" = "3) When \"Loading Startup Options\" appears below the Apple logo, release the power button";
+"storeAccount.selectAccRegion.cht" = "Taiwan, Hong Kong, Makau";
 
 /* (No Comment) */
-"setupView.step4" = "4) Click the Recovery Mode boot option";
+"storeAccount.selectAccRegion.euro" = "Eropa";
 
 /* (No Comment) */
-"setupView.step5" = "5) In Recovery, open Terminal (Menu bar -> Utilities -> Terminal)";
+"storeAccount.selectAccRegion.usa" = "Amerika";
 
 /* (No Comment) */
-"setupView.step6" = "6) Type: ";
+"storeAccount.store" = "Simpan akun";
 
 /* (No Comment) */
-"setupView.step7" = "7) Enter the command. Input your Mac login password (The text will be hidden)";
-
-/* (No Comment) */
-"setupView.step8" = "8) Click the Apple symbol in the Menu bar and Restart";
-
-/* (No Comment) */
-"setupView.step9" = "If you encountered any errors, repeat the whole process again";
-
-/* (No Comment) */
-"setupView.subheader" = "Resolves apps not allowing logins, crashes at start and more";
-
-/* (No Comment) */
-"setupView.vidTutorials" = "Video Tutorials";
-
-/* (No Comment) */
-"setupView.youtube" = "YouTube";
-
-/* (No Comment) */
-"soundAlert.failureText" = "Failed to set current output device's sample rate to 48 KHz. You can manually set sample rate in ‘Audio MIDI Setup’ app";
-
-/* (No Comment) */
-"soundAlert.informativeText" = "Your current output device does not have a sample rate of 48 or 44.1 KHz! Crashes may occur. Would you like to change your current output device's sample rate to 48 KHz?";
-
-/* (No Comment) */
-"soundAlert.messageText" = "Incorrect Audio Settings Detected!";
-
-/* (No Comment) */
-"soundAlert.successText" = "Current output device sample rate set to 48 KHz";
-
-/* (No Comment) */
-"storeAccount.deleteAcc" = "Delete an account";
-
-/* (No Comment) */
-"storeAccount.nameOfAcc" = "Name of your account";
-
-/* (No Comment) */
-"storeAccount.nameOfAcc.textfieldPlaceholder" = "Name of account...";
-
-/* (No Comment) */
-"storeAccount.selectAcc" = "Select an account";
-
-/* (No Comment) */
-"storeAccount.selectAccRegion" = "Select account region";
-
-/* (No Comment) */
-"storeAccount.selectAccRegion.asia" = "Asia";
-
-/* (No Comment) */
-"storeAccount.selectAccRegion.cht" = "TW, HK, MO";
-
-/* (No Comment) */
-"storeAccount.selectAccRegion.euro" = "Europe";
-
-/* (No Comment) */
-"storeAccount.selectAccRegion.usa" = "America";
-
-/* (No Comment) */
-"storeAccount.store" = "Store account";
-
-/* (No Comment) */
-"storeAccount.storeAcc" = "Store an account";
-
-/* (No Comment) */
-"xcode.install.failed" = "Xcode Command Line Tools intallation failed";
-
-/* (No Comment) */
-"xcode.install.message" = "You need to install Xcode Command Line Tools and restart PlayCover";
-
-/* (No Comment) */
-"xcode.install.progress" = "Installing Xcode Command Line Tools";
-
-/* (No Comment) */
-"xcode.install.progress.subtext" = "May take around 5-10 minutes depending on internet speed";
-
-/* (No Comment) */
-"xcode.install.success" = "Xcode Command Line Tools installation succeeded";
-
-/* (No Comment) */
-"settings.toggle.portraitMode" = "Portrait mode";
+"storeAccount.storeAcc" = "Simpan akun";
+"settings.tab.misc" = "Lain-lain";
+"playapp.exportKmPanel.fieldLabel" = "nama PetaMain:";
+"storeAccount.alert.restoreAccount.button" = "Pulihkan akun";
+"sidebar.appLibrary" = "Perpustakaan aplikasi";
+"sidebar.ipaLibrary" = "Perpustakaan IPA";
+"storeAccount.alert.restoreAccount" = "Benarkah pulihkan akun?";
+"storeAccount.alert.restoreAccount.msg" = "Ini akan menimpa akun anda yang saat ini masuk.";
+"storeAccount.alert.deleteAccount" = "Benarkah hapus akun?";
+"storeAccount.alert.deleteAccount.button" = "Hapus akun";
+"alert.moveAppToApplications.title" = "Pindah ke folder aplikasi?";
+"alert.moveAppToApplications.subtitle" = "PlayCover harus berada di folder aplikasi agar dapat berjalan dengan benar. Tekan tombol di bawah untuk memindahkan PlayCover secara otomatis.";
+"button.Quit" = "Keluar";
+"error.appEncrypted" = "Aplikasi ini dienkripsi! Harap gunakan IPA yang didekripsi. iMazing IPA tidak didukung!";
+"error.appCorrupted" = "Ada yang salah dengan IPA ini. Coba gunakan file IPA lain.";
+"error.appProhibited" = "Menggunakan aplikasi ini melalui PlayCover kemungkinan akan mengakibatkan ban!";
+"error.noGenshinAccount" = "Kami tidak dapat menemukan akun Genshin! Apakah anda masuk ke akun dalam aplikasi?";
+"settings.title" = "Pengaturan";
+"settings.tab.info" = "Informasi";
+"settings.tab.km" = "Pemetaan kontrol";
+"settings.toggle.km.help" = "Tambahkan dukungan keyboard ke game hanya sentuh. Gunakan Command + K untuk membuka menu editor.";
+"settings.tab.graphics" = "Grafis";
+"settings.picker.adaptiveRes" = "Resolusi:";
+"settings.picker.adaptiveRes.help" = "Mengubah resolusi jendela aplikasi";
+"settings.picker.adaptiveRes.0" = "Aplikasi default";
+"settings.picker.adaptiveRes.1" = "Otomatis (Berdasarkan Tampilan)";
+"settings.picker.adaptiveRes.5" = "Kustom";
+"settings.picker.aspectRatio" = "Rasio aspek:";
+"settings.toggle.disableDisplaySleep.help" = "Cegah tampilan mati saat aplikasi ini berjalan";
+"settings.toggle.jbBypass.help" = "Upaya untuk melewati Deteksi Jailbreak di beberapa game (Tidak dijamin selalu berfungsi)";
+"settings.info.displayName" = "Nama tampilan:";
+"settings.info.bundleName" = "Nama paket:";
+"settings.info.bundleIdentifier" = "Pengidentifikasi paket:";
+"settings.info.executableName" = "Nama yang dapat dieksekusi:";
+"settings.info.minimumOSVersion" = "Versi OS minimal:";
+"settings.info.url" = "URL :";
+"settings.resetSettings" = "Setel ulang pengaturan";
+"settings.resetKm" = "Setel ulang pemetaan kontrol";
+"settings.resetSettingsCompleted" = "Pengaturan telah dikembalikan ke default!";
+"settings.resetKmCompleted" = "Pemetaan kontrol telah disetel ulang!";
+"settings.toggle.hud" = "HUD Logam";
+"settings.info.bundleVersion" = "Versi paket:";
+"playapp.deleteConfirm" = "Uninstall";
+"playapp.deleteMessage" = "Apakah kamu yakin kamu ingin uninstall %@?";
+"alert.legacyImport.title" = "Pengaturan aplikasi lama terdeksi!";
+"alert.legacyImport.subtitle" = "Setelan lama dan file pemetaan kontrol terdeteksi. Apakah Anda ingin mengonversi file ini ke format baru?";
+"button.Convert" = "Ubah";
+"settings.text.detectedResolution" = "Resolusi terdeteksi:";
+"playapp.add" = "Tambah Aplikasi";
+"alert.wrongFileType.title" = "Jenis file salah!";
+"alert.wrongFileType.subtitle" = "PlayCover hanya dapat menginstal file .ipa yang valid.";
+"playapp.addSource" = "Tambah sumber";
+"ipaLibrary.noSources.title" = "Tidak ada sumber IPA ditambahkan";
+"ipaLibrary.noSources.subtitle" = "Anda tidak memiliki sumber IPA yang ditambahkan. Klik tombol di bawah untuk menambahkan satu.";
+"ipaLibrary.noSources.button" = "Tambahkan sumber";
+"ipaLibrary.noNetworkConnection.toast" = "Tidak ada koneksi internet!";
+"preferences.tab.ipasource" = "Sumber IPA";
+"preferences.button.addSource" = "Tambah sumber";
+"preferences.button.deleteSource" = "Hapus sumber";
+"preferences.button.moveSourceUp" = "Pindah sumber keatas";
+"preferences.button.moveSourceDown" = "Pindah sumber kebawah";
+"preferences.popover.valid" = "Tautan valid";
+"preferences.popover.badurl" = "URL tidak valid!";
+"preferences.popover.badjson" = "JSON tidak valid atau tidak ditemukan!";
+"preferences.textfield.url" = "Sumber URL...";
+"playapp.download.downloading" = "Mengunduh";
+"error.waitDownload" = "Harap tunggu hingga unduhan selesai!";
+"preferences.tab.uninstall" = "Hapus instalan";
+"preferences.whenUninstalling" = "Ketika uninstall:";
+"preferences.toggle.showUninstall" = "Tampilkan munculan peringatan";
+"preferences.toggle.clearAppData" = "Hapus data";
+"preferences.toggle.removeKeymap" = "Hapus keymap";
+"preferences.toggle.removeSetting" = "Hapus pengaturan";
+"preferences.toggle.removeEntitlements" = "Hapus hak";
+"preferences.button.pruneFiles" = "Pangkas file";
+"preferences.prune.alert" = "Apakah anda yakin ingin memangkas semua file?";
+"preferences.prune.message" = "Ini akan menghapus semua file yang tidak digunakan termasuk pengaturan, pemetaan kontrol, hak, dan data aplikasi";
+"playapp.progress.failed" = "Gagal";
+"alert.supression" = "Anda dapat mengubah ini di preferensi PlayCover";
+"menubar.clearCache" = "Hapus data gambar";
+"alert.install.injectPlayTools" = "Masukkan PlayTools";
+"preferences.tab.install" = "Install";
+"preferences.toggle.showInstallPopup" = "Tampilkan install PlayTools popup";
+"preferences.toggle.alwaysInstallPlayTools" = "Selalu install PlayTools";
+"button.Yes" = "Iya";
+"button.No" = "Tidak";
+"settings.noPlayTools" = "PlayTools tidak diinstal di aplikasi ini";
+"settings.removePlayTools" = "Hapus PlayTools";
+"settings.info.playTools" = "PlayTools terpasang:";
+"playapp.refreshSources" = "Menyegarkan sumber";
+"error.appMaliciousProhibited" = "Aplikasi ini berperilaku dengan jahat di Mac, dan menggunakannya dapat membuat perangkat Anda tidak dapat dinyalakan, oleh karena itu diblokir dari PlayCover. (Menghapus Instalan...)";
+"alert.install.injectPlayToolsQuestion" = "Apakah Anda ingin menyuntikkan PlayTools ke dalam aplikasi ini?";
+"alert.install.playToolsInformative" = "PlayTools adalah alat yang memungkinkan Anda untuk mengikat tombol ke sentuhan layar, resolusi tampilan khusus, dan banyak lagi, tetapi dapat merusak aplikasi tertentu";
+"button.Help" = "Bantuan";
+"button.Dismiss" = "Abaikan";
+"state.enabled" = "Diaktifkan";
+"state.disabled" = "Nonaktif";
+"configSigning.header" = "Configure Package Signing";
+"configSigning.info.SIP" = "SIP is required to be fully to partially disabled in order for AMFI to be turned off.";
+"configSigning.subtext" = "Package Signing helps fixing issues with apps that rely on \ncorrect Team IDs for operations like authorization. \nThere may be security risks associated with enabling this feature.\n\n As such, we recommend disabling it when it's not necessary";
+"configSigning.info.SIPHeader" = "System Integrity Protection";
+"configSigning.info.AMFI" = "AMFI is required to be turned off in order to allow fake signing of apps, allowing them to run with the correct Team ID";
+"configSigning.info.AMFIHeader" = "Apple Mobile File Integrity";
+"configSigning.action.shutdown" = "Shut down my Mac";
+"configSigning.action.copyCommand" = "Copy Command to Clipboard";
+"configSigning.action.restart" = "Restart my Mac";
+"configSigning.step.disableSIP" = "Please disable SIP from Recovery Mode";
+"configSigning.step.disableAMFI" = "Please disable AMFI";
+"configSigning.step.AMFIreboot" = "AMFI Disabled. Please reboot";
+"configSigning.step.complete" = "Package Signing has been configured successfully";
+"configSigning.alert.copied" = "Command Copied!";
+"configSigning.alert.info" = "Please paste and run the command in Terminal.app. Your Mac will reboot after";
+"state.pendingReboot" = "Menunggu Menyalakan Ulang";
+"menubar.configSigning" = "Configure Signing";
+"alert.power.title" = "Mode Daya Rendah Diaktifkan!";
+"alert.power.subtitle" = "Beberapa aplikasi tidak akan berfungsi dengan Mode Daya Rendah diaktifkan. Disarankan untuk menonaktifkannya.";
+"ipaLibrary.version.older" = "Versi ini lebih tua dari versi yang telah Anda instal";
+"ipaLibrary.version.same" = "Aplikasi sudah diinstal";
+"ipaLibrary.version.newer" = "Versi ini lebih baru daripada versi yang telah Anda instal";
+"ipaLibrary.alert.download" = "Apakah Anda yakin ingin mengunduh versi %@ ini?";
+"ipaLibrary.download" = "Unduh";
+"alert.differentBundleIdKeymap.message" = "Keymap mungkin telah dibuat untuk aplikasi lain.";
+"alert.differentBundleIdKeymap.text" = "Apakah Anda yakin ingin mengimpor keymap ini?";
+"settings.text.debugger" = "Debugger:";
+"settings.toggle.lldb" = "Open with LLDB";
+"settings.toggle.lldbWithTerminal" = "Open in terminal";
+"settings.unavailable.hud" = "Metal HUD unavailable";
+"settings.playChain.enable" = "Enable PlayChain (experimental)";
+"settings.playChain.help" = "Enable PlayChain support for this application, allowing it to (partially) use Apple Keychain Services";
+"settings.playChain.debugging" = "PlayChain debugging";
+"error.failedToStripBinary" = "Tidak dapat menemukan arsitektur ARM64 dalam fat binary!";
+"playapp.noSources.title" = "Tidak ada IPA yang Diinstal";
+"playapp.noSources.subtitle" = "Saat ini Anda belum memiliki IPA yang terinstal. Klik tombol di bawah ini untuk mengimpornya.";
+"settings.tab.bypasses" = "Bypasses";
+"playapp.download.integrityCheck" = "Memverifikasi integritas file:";
+"playapp.download.differentChecksum" = "Checksum yang berbeda! Apakah Anda ingin melanjutkan penginstalan?";
+"playapp.download.differentChecksumDesc" = "Diharapkan \"%@\", yang didapat adalah \"%@\"";
+"playapp.progress.canceled" = "Dibatalkan";
+"playapp.importIPA" = "Impor IPA";
+"ipaLibrary.noNetworkConnection.required" = "IPA Library membutuhkan koneksi internet";
+"preferences.toggle.removePlayChain" = "Hapus PlayChain";
+"preferences.popover.duplicate" = "Tautan Duplikat";
+"playapp.clearPlayChain" = "Bersihkan Data PlayChain";
+"alert.app.clearPlayChain" = "Semua data PlayChain akan dihapus. Anda mungkin perlu masuk ke aplikasi lagi. Apakah Anda ingin melanjutkan?";
+"button.Reload" = "Muat ulang";
+"settings.highResolution" = "High resolution may cause crashing";
+"settings.picker.windowFix" = "Fix window display issues";
+"settings.picker.windowFixMethod.0" = "Normal";
+"settings.picker.windowFixMethod.1" = "Alternate";
+"settings.picker.windowFix.help" = "Apply window fixes that may helps your apps display normally";
+"preferences.popover.checking" = "Memeriksa URL";
+"settings.toggle.introspection" = "Insert Introspection libraries";
+"settings.toggle.introspection.help" = "Add the system introspection libraries to the app. Known to fix issues with some apps not starting correctly";
+"settings.picker.scaler" = "Resolution Scaler";
+"button.Enable" = "Aktifkan";
+"button.Reset" = "Atur ulang";
+"button.Unlock" = "Buka";
+"settings.toggle.rootWorkDir" = "Start app at root directory";
+"keycover.masterPassword" = "Master Password";
+"keycover.alert.content" = "Keychain access has been disabled for the current session";
+"settings.toggle.rootWorkDir.help" = "Change the working directory of the app to / just like on iOS. Turn this off if the app misbehave";
+"keycover.confirmMasterPassword" = "Confirm Master Password";
+"keycover.oldMasterPassword" = "Current Master Password";
+"keycover.error.blankPassword" = "Password cannot be blank";
+"keycover.error.notMatch" = "Passwords do not match";
+"keycover.error.incorrectPassword" = "Incorrect Password";
+"keycover.status.title" = "KeyCover Status:";
+"keycover.status.managedPassword" = "Enabled with Managed Password";
+"keycover.status.userPassword" = "Enabled with User Password";
+"keycover.status.chainCount" = "KeyCover Chain Status: ";
+"keycover.status.unlockedCount %@ %@" = "%@ unlocked chains in %@ total";
+"keycover.button.lockAll" = "Lock All Chains";
+"keycover.button.changePassword" = "Change Master Password";
+"keycover.toggle.startupPrompt" = "Prompt for KeyCover at startup";
+"keycover.toggle.startupPrompt.help" = "KeyCover will prompt for your master password when you launch the application. If this is disabled, it will be prompted when you launch an app that uses PlayChain.";
+"keycover.setup.useGeneratedKey" = "Managed Automatically";
+"keycover.setup.useUserKey" = "Use my own key";
+"keycover.setup.encryptionKey" = "Encryption Key: ";
+"keycover.setupPrompt.title" = "Enter a master password to use for KeyCover";
+"keycover.changePasswordPrompt.title" = "Enter your old master password and a new one to update your KeyCover encryption key";
+"keycover.removePrompt.title" = "Enter your master password to remove KeyCover encryption";
+"keycover.unlockPrompt.title" = "Enter your master password to unlock KeyCover";
+"keycover.alert.title" = "Keychain was not unlocked";
+"settings.toggle.autoKM" = "Keymap Pintar";
+"settings.toggle.autoKM.help" = "Menonaktifkan pemetaan kunci secara otomatis ketika input teks terdeteksi.";
+"settings.applicationCategoryType" = "Application Type";
+"settings.toggle.iosFrameworks" = "Force Insert iOS Frameworks";
+"settings.info.alias" = "Alias:";
+"settings.toggle.enableScrollWheel.help" = "Enable scroll wheel in keymapping";
+"settings.toggle.iosFrameworks.help" = "Add the system ios libraries to the app. Known to fix issues with some apps cannot find ios framework";
+"settings.toggle.enableScrollWheel" = "Enable Scroll Wheel";

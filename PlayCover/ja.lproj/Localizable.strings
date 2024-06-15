@@ -2,13 +2,13 @@
 "alert.app.delete" = "アプリの全てのデータが削除されます。もう一度ダウンロードする必要があるかもしれません。続けますか？";
 
 /* (No Comment) */
-"alert.app.preferences" = "All game preferences will be deleted, You may need to configure your in-game settings(region) and wait a couple of seconds until game assets are located (They won't be downloaded the game will just verify them). Do you wish to continue?";
+"alert.app.preferences" = "すべてのアプリ内設定は削除されます。続けますか？";
 
 /* (No Comment) */
 "alert.appCacheCleared" = "アプリのデータは削除されました！";
 
 /* (No Comment) */
-"alert.error" = "何らかのエラーが発生しました!";
+"alert.error" = "エラーが発生しました!";
 
 /* (No Comment) */
 "alert.errorImportKm" = "キーマッピングのインポートに何らかのエラーが発生しました！";
@@ -17,43 +17,22 @@
 "alert.kmImported" = "キーマッピングをインポートしました！";
 
 /* (No Comment) */
-"alert.moveAppToApplications" = "PlayCoverは/Applicationsフォルダに居ないと問題が発生します。以下のボタンを押してPlayCoverを/Applicationsフォルダに移動させることができます。";
-
-/* (No Comment) */
 "alert.moveAppToApplications.move" = "/Applicationsに移動";
 
 /* (No Comment) */
-"alert.restart" = "Please restart PlayCover.";
+"alert.restart" = "PlayCoverを再起動してください。";
 
 /* (No Comment) */
 "alert.storeAccount.regionIsNotValid" = "現在のアカウントは他の地域に設定されています。ゲームを起動して、地域を変更してから、ゲートを通過して保存してください。その後、再度試してください";
 
 /* (No Comment) */
-"alert.success" = "成功！";
-
-/* (No Comment) */
-"alert.wrongFileType" = "ファイルのタイプを間違っています";
-
-/* (No Comment) */
-"alert.wrongFileType.message" = ".ipaファイルを選択してください";
-
-/* (No Comment) */
-"bottomBar.notices" = "通知";
-
-/* (No Comment) */
-"bottomBar.notices.help" = "デベロッパーからのニュースとお知らせ";
-
-/* (No Comment) */
-"bottomBar.setupViewButton" = "問題が発生していますか？";
+"alert.success" = "完了しました";
 
 /* (No Comment) */
 "button.Cancel" = "キャンセル";
 
 /* (No Comment) */
 "button.Close" = "閉じる";
-
-/* (No Comment) */
-"button.Dismiss" = "閉じる";
 
 /* (No Comment) */
 "button.Install" = "インストール";
@@ -65,25 +44,13 @@
 "button.Proceed" = "実行";
 
 /* (No Comment) */
-"debug.crash" = "[DEBUG] アプリのクラッシュ";
-
-/* (No Comment) */
 "error.corruptedIPA" = "この.ipaファイルは破損しています。\"Info.plist\"ファイルが含まれていません。";
-
-/* (No Comment) */
-"error.reinstallApp" = "PlayCoverを再インストールしてください";
 
 /* (No Comment) */
 "error.waitInstallation" = "今のインストールを完了するまでお待ちください！";
 
 /* (No Comment) */
-"failedToFetchNotices" = "通知を取得できませんでした。インターネット接続を確認してください。";
-
-/* (No Comment) */
-"logs.copied" = "ログをコピーしました";
-
-/* (No Comment) */
-"menubar.checkForUpdates" = "更新を確認する";
+"menubar.checkForUpdates" = "更新を確認する…";
 
 /* (No Comment) */
 "menubar.discord" = "Discord";
@@ -92,25 +59,13 @@
 "menubar.documentation" = "ドキュメント";
 
 /* (No Comment) */
-"menubar.downloadMoreApps" = "さらにアプリをダウンロード";
-
-/* (No Comment) */
-"menubar.downloadMoreApps.help" = "このサイトを使ってアプリをインストールする";
-
-/* (No Comment) */
 "menubar.exportToSideloady" = "Sideloadlyに書き出す";
-
-/* (No Comment) */
-"menubar.exportToSideloady.help" = ".ipaファイルをSideloadyのために書き出す。Sideloady.ioでは、SIPを無効にしないでアプリやゲームが動作します。";
 
 /* (No Comment) */
 "menubar.github" = "GitHub";
 
 /* (No Comment) */
 "menubar.log.copy" = "ログをコピーする";
-
-/* (No Comment) */
-"menubar.showAppLinks" = "アプリのリンクを表示";
 
 /* (No Comment) */
 "menubar.website" = "ホームページ";
@@ -122,22 +77,16 @@
 "notification.appInstalled.message" = "PlayCoverでチェックしてください！";
 
 /* (No Comment) */
-"playapp.activateAccount" = "アカウントを有効にする";
+"playapp.activateAccount" = "アカウントを変更する";
 
 /* (No Comment) */
-"playapp.add" = "アプリを追加";
+"playapp.clearCache" = "アプリのキャッシュを消去";
 
 /* (No Comment) */
-"playapp.add.help" = "アプリのファイルをここに入れてインストールする。";
+"playapp.clearPreferences" = "アプリの設定をリセット";
 
 /* (No Comment) */
-"playapp.clearCache" = "アプリのデータを削除";
-
-/* (No Comment) */
-"playapp.clearPreferences" = "Clear app preferences";
-
-/* (No Comment) */
-"playapp.delete" = "アプリを削除";
+"playapp.delete" = "アプリをアンインストール";
 
 /* (No Comment) */
 "playapp.deleteAccount" = "アカウントを削除";
@@ -146,7 +95,7 @@
 "playapp.exportKm" = "キーマッピングをエクスポート";
 
 /* (No Comment) */
-"playapp.importKm" = "キーマッピングをインポート";
+"playapp.importKm" = "キーマップを読み込む";
 
 /* (No Comment) */
 "playapp.install.addToLib" = "ライブラリにアプリを追加中...";
@@ -158,7 +107,7 @@
 "playapp.install.createWrapper" = "アプリのコンテナーを作成中...";
 
 /* (No Comment) */
-"playapp.install.finished" = "完成";
+"playapp.progress.finished" = "完了";
 
 /* (No Comment) */
 "playapp.install.installPlayTools" = "PlayToolsをインストール中...";
@@ -170,7 +119,7 @@
 "playapp.install.unzip" = ".ipaファイルからアプリの書き出し中...";
 
 /* (No Comment) */
-"playapp.openCache" = "アプリのデータフォルダーを表示";
+"playapp.openCache" = "アプリのキャッシュフォルダを表示";
 
 /* (No Comment) */
 "playapp.settings" = "設定";
@@ -179,139 +128,67 @@
 "playapp.showInFinder" = "Finderで表示";
 
 /* (No Comment) */
-"playapp.storeCurrentAccount" = "今のアカウントを保存";
+"playapp.storeCurrentAccount" = "ストアのアカウント";
 
 /* (No Comment) */
-"playapp.update" = "アプリを更新";
+"preferences.button.checkForUpdates" = "更新の確認";
 
 /* (No Comment) */
-"preferences.button.checkForUpdates" = "Check for updates now...";
+"preferences.tab.updates" = "アップデート";
 
 /* (No Comment) */
-"preferences.tab.updates" = "Updates";
+"preferences.toggle.automaticUpdates" = "自動アップデート";
 
 /* (No Comment) */
-"preferences.toggle.automaticUpdates" = "Automatically check for updates";
+"settings.button.discord" = "カスタムDiscordアクティビティ";
 
 /* (No Comment) */
-"search.search" = "検索...";
+"settings.button.clearActivity" = "カスタムアクティビティを消去";
 
 /* (No Comment) */
-"settings.picker.displayRefreshRate" = "画面のリフレッシュレート";
-
-/* (No Comment) */
-"settings.picker.iosDevice" = "Select iOS device";
-
-/* (No Comment) */
-"settings.picker.screenSize" = "ディスプレー解像度";
-
-/* (No Comment) */
-"settings.reset" = "設定とキーマッピングをリセットする";
-
-/* (No Comment) */
-"settings.resetCompleted" = "設定をデフォルトに戻しました！";
+"settings.picker.iosDevice" = "iOSデバイス:";
 
 /* %.f */
-"settings.slider.mouseSensitivity" = "マウス感度: ";
+"settings.slider.mouseSensitivity" = "マウス感度: %.f";
 
 /* (No Comment) */
-"settings.text.customHeight" = "Height";
+"settings.text.applicationID" = "アプリケーションID";
 
 /* (No Comment) */
-"settings.text.customWidth" = "Width";
+"settings.text.customHeight" = "縦";
 
 /* (No Comment) */
-"settings.toggle.adaptiveDisplay" = "ディスプレイに合わせる";
+"settings.text.customWidth" = "横";
 
 /* (No Comment) */
-"settings.toggle.adaptiveDisplay.info" = "アプリウィンドウを内蔵Macディスプレイに合わせて調整します。";
+"settings.text.details" = "詳細";
 
 /* (No Comment) */
-"settings.toggle.autoWindowResize" = "ウィンドウの自動サイズ変更を有効にする";
+"settings.text.details.help" = "タイトルの下から1行目";
 
 /* (No Comment) */
-"settings.toggle.customSize" = "Enable custom window size";
+"settings.text.image" = "イメージ";
+
+/* (No Comment) */
+"settings.text.image.help" = "画像または開発ポータルのアセット名へのリンク";
+
+/* (No Comment) */
+"settings.text.state" = "状態";
+
+/* (No Comment) */
+"settings.text.state.help" = "タイトルの下から2番目の行";
 
 /* (No Comment) */
 "settings.toggle.disableDisplaySleep" = "ディスプレイのスリープを無効にする";
 
 /* (No Comment) */
-"settings.toggle.disableDisplaySleep.info" = "このアプリの実行中にディスプレイがオフにならないようにする";
+"settings.toggle.discord" = "Discordアクティビティの有効化";
 
 /* (No Comment) */
-"settings.toggle.gaming" = "ゲームモードを有効にする";
-
-/* (No Comment) */
-"settings.toggle.jbBypass" = "ジェイルブレイクバイパスを有効にする（アルファ版）";
-
-/* (No Comment) */
-"settings.toggle.jbBypass.info" = "ジェイルブレイクの検出をいくつかのゲームで避けることができます（常に動作する保証はありません）";
+"settings.toggle.jbBypass" = "脱獄検知回避を有効にする（実験的）";
 
 /* (No Comment) */
 "settings.toggle.km" = "キーマッピングを有効にする";
-
-/* (No Comment) */
-"settings.toggle.km.info" = "タッチのみでゲームをプレイするためにキーボードの対応を追加する。Cmd+Kを押してエディターメニューを開くことができます。";
-
-/* (No Comment) */
-"setup.enterLoginPassword" = "ユーザーパスワードを入力してください";
-
-/* (No Comment) */
-"setup.enterLoginPassword.info" = "Macをロック解除するために使用されるパスワードを入力してください。";
-
-/* (No Comment) */
-"setup.incorrectPassword" = "パスワードが正しくありません。もう一度やり直してください";
-
-/* (No Comment) */
-"setup.requireReboot" = "変更を有効にするには、Macを再起動してください。";
-
-/* (No Comment) */
-"setupView.bilibili" = "BiliBili";
-
-/* (No Comment) */
-"setupView.header" = "問題が発生した場合は、以下の手順に従ってください";
-
-/* (No Comment) */
-"setupView.pressButtonAndEnterPassword" = "以下からSIPを無効にして、Macログインパスワードを入力してください。";
-
-/* (No Comment) */
-"setupView.pressButtonAndEnterPassword.button" = "SIPを無効にする";
-
-/* (No Comment) */
-"setupView.step1" = "1) Macをシャットダウンする";
-
-/* (No Comment) */
-"setupView.step2" = "2) Macが完全にシャットダウンするのを待ってから、電源ボタンを押してください";
-
-/* (No Comment) */
-"setupView.step3" = "3) アップルロゴの下に\"起動オプションを読み込み中\"が表示されたら、電源ボタンを放してください";
-
-/* (No Comment) */
-"setupView.step4" = "4) リカバリモードの起動オプションをクリックします";
-
-/* (No Comment) */
-"setupView.step5" = "5) リカバリーモードの中で、ターミナルを開く（メニューバー → ユーティリティ → ターミナル）";
-
-/* (No Comment) */
-"setupView.step6" = "6) 以下のコマンドを入力 ";
-
-/* (No Comment) */
-"setupView.step7" = "7) コマンドを入力してEnterキーを押してください。パスワードを入力してEnterキーを押してください。（パスワードは入力しても表示されません）";
-
-/* (No Comment) */
-"setupView.step8" = "8) アップルロゴをメニューバーにクリックして再起動する";
-
-/* (No Comment) */
-"setupView.step9" = "問題が発生したら、再度全部をやり直してください";
-
-/* (No Comment) */
-"setupView.subheader" = "ログインを許可しないアプリ、起動時のクラッシュなどを解決します";
-
-/* (No Comment) */
-"setupView.vidTutorials" = "動画チュートリアル（英語）";
-
-/* (No Comment) */
-"setupView.youtube" = "YouTube";
 
 /* (No Comment) */
 "soundAlert.failureText" = "サンプルレートの変更に失敗しました。「Audio MIDI設定」アプリから手動でサンプルレートを設定することができます";
@@ -357,21 +234,193 @@
 
 /* (No Comment) */
 "storeAccount.storeAcc" = "アカウントを保存";
-
-/* (No Comment) */
-"xcode.install.failed" = "Xcode Command Line Tools intallation failed";
-
-/* (No Comment) */
-"xcode.install.message" = "You need to install Xcode Command Line Tools and restart PlayCover";
-
-/* (No Comment) */
-"xcode.install.progress" = "Installing Xcode Command Line Tools";
-
-/* (No Comment) */
-"xcode.install.progress.subtext" = "May take around 5-10 minutes depending on internet speed";
-
-/* (No Comment) */
-"xcode.install.success" = "Xcode Command Line Tools installation succeeded";
-
-/* (No Comment) */
-"settings.toggle.portraitMode" = "Portrait mode";
+"settings.resetKmCompleted" = "キーマップは初期化されました！";
+"settings.tab.misc" = "その他";
+"playapp.exportKmPanel.fieldLabel" = "キーマップの名前:";
+"sidebar.appLibrary" = "アプリケーションライブラリ";
+"sidebar.ipaLibrary" = "IPAライブラリ";
+"storeAccount.alert.restoreAccount" = "本当にアカウントを復元しますか？";
+"storeAccount.alert.restoreAccount.button" = "アカウントを復元";
+"storeAccount.alert.restoreAccount.msg" = "これにより、現在サインインしているアカウントが上書きされます。";
+"storeAccount.alert.deleteAccount" = "本当にアカウントを削除しますか？";
+"storeAccount.alert.deleteAccount.button" = "アカウントを削除";
+"alert.moveAppToApplications.title" = "アプリケーションフォルダに移動させますか？";
+"alert.moveAppToApplications.subtitle" = "正しく実行するには、PlayCoverがアプリケーションフォルダにある必要があります。下のボタンを押すと、PlayCoverが自動的に移動されます。";
+"button.Quit" = "終了";
+"error.appEncrypted" = "このアプリは暗号化されています!復号化されたIPAを使用してください。iMazing IPAはサポートされていません！";
+"error.appCorrupted" = "問題が発生しました。 別の IPA ファイルを使用してみてください。";
+"error.appProhibited" = "PlayCoverでこのアプリを使用すると、BAN される可能性があります!";
+"error.noGenshinAccount" = "Genshin アカウントが見つかりませんでした。 アプリ内でアカウントにサインインしていますか?";
+"settings.title" = "%@設定";
+"settings.tab.info" = "情報";
+"settings.tab.km" = "キーマップ";
+"settings.toggle.km.help" = "タッチスクリーンを使用する ゲームにキーボード サポートを追加します。 Command + K を使用してエディター メニューを開きます。";
+"settings.tab.graphics" = "グラフィックス";
+"settings.picker.adaptiveRes" = "適応解像度:";
+"settings.picker.adaptiveRes.help" = "アプリのウィンドウ解像度の調整";
+"settings.picker.adaptiveRes.0" = "デフォルト";
+"settings.picker.adaptiveRes.1" = "自動";
+"settings.picker.adaptiveRes.5" = "カスタム";
+"settings.toggle.jbBypass.help" = "一部のゲームで脱獄検出を回避しようとします (ゲームによっては動作しません)";
+"settings.picker.aspectRatio" = "アスペクト比:";
+"settings.toggle.disableDisplaySleep.help" = "スリープを無効にします";
+"settings.info.displayName" = "表示名:";
+"settings.info.bundleName" = "バンドル名:";
+"settings.info.bundleIdentifier" = "バンドル識別子:";
+"settings.info.executableName" = "実行可能ファイル名:";
+"settings.info.minimumOSVersion" = "必要なiOSバージョン:";
+"settings.info.url" = "URL:";
+"settings.resetSettings" = "設定をリセット";
+"settings.resetKm" = "キーマップをリセット";
+"settings.resetSettingsCompleted" = "設定は初期化されました！";
+"settings.toggle.hud" = "Metal HUD";
+"settings.info.bundleVersion" = "バンドルバージョン:";
+"playapp.deleteConfirm" = "アンインストール";
+"playapp.deleteMessage" = "本当に %@ をアンインストールしますか？";
+"alert.legacyImport.title" = "古いアプリケーション設定が検出されました！";
+"alert.legacyImport.subtitle" = "レガシー設定とキーマッピングファイルが検出されました。これらのファイルを新しい形式に変換しますか？";
+"button.Convert" = "変換";
+"settings.text.detectedResolution" = "検出された解像度:";
+"playapp.add" = "アプリを追加";
+"alert.wrongFileType.title" = "ファイルのタイプが無効です!";
+"alert.wrongFileType.subtitle" = "PlayCoverは有効な.ipaファイルのみをインストールできます。";
+"playapp.addSource" = "ソースを追加";
+"ipaLibrary.noSources.title" = "ソースがありません";
+"ipaLibrary.noSources.subtitle" = "IPAのソースがありません。ボタンをクリックして追加します。";
+"ipaLibrary.noSources.button" = "ソースを追加";
+"ipaLibrary.noNetworkConnection.toast" = "インターネットに接続されていません！";
+"preferences.tab.ipasource" = "IPAのソース";
+"preferences.button.addSource" = "ソースを追加";
+"preferences.button.deleteSource" = "ソースを削除";
+"preferences.button.moveSourceUp" = "1つ上に上げる";
+"preferences.button.moveSourceDown" = "1つ下に下げる";
+"preferences.popover.valid" = "有効なリンク";
+"preferences.popover.badurl" = "無効なURL!";
+"preferences.popover.badjson" = "JSONファイルが無効であるか見つかりません!";
+"preferences.textfield.url" = "ソースのURL...";
+"playapp.download.downloading" = "ダウンロード中";
+"error.waitDownload" = "ダウンロードが終了するまでお待ちください!";
+"menubar.clearCache" = "キャッシュをクリア";
+"preferences.tab.uninstall" = "アンインストール";
+"preferences.whenUninstalling" = "アンインストール時:";
+"preferences.toggle.showUninstall" = "警告を表示";
+"preferences.toggle.clearAppData" = "データの消去";
+"preferences.toggle.removeKeymap" = "キーマップを消去";
+"preferences.toggle.removeSetting" = "設定を削除";
+"preferences.toggle.removeEntitlements" = "資格を消去";
+"preferences.button.pruneFiles" = "ファイルを削除";
+"preferences.prune.alert" = "すべてのファイルを削除しますか？";
+"preferences.prune.message" = "これにより、設定、キーマッピング、エンタイトルメント、アプリデータなどのファイルがすべて削除されます";
+"playapp.progress.failed" = "失敗";
+"alert.supression" = "これはPlayCover環境設定で変更できます";
+"preferences.tab.install" = "インストール";
+"preferences.toggle.showInstallPopup" = "PlayToolsをインストールするポップアップを表示する";
+"preferences.toggle.alwaysInstallPlayTools" = "常にPlayToolsをインストールする";
+"alert.install.injectPlayTools" = "PlayToolsをインストールする";
+"button.Yes" = "はい";
+"button.No" = "いいえ";
+"settings.noPlayTools" = "PlayToolsがインストールされていません";
+"settings.removePlayTools" = "PlayToolsを削除";
+"settings.info.playTools" = "PlayToolsがインストール済み:";
+"playapp.refreshSources" = "ソースを更新";
+"error.appMaliciousProhibited" = "このアプリは Mac で悪意を持って動作し、これを使用するとデバイスが起動できない状態になる可能性があるため、PlayCover からブロックされました。 (アンインストール中...)";
+"alert.install.injectPlayToolsQuestion" = "PlayToolsをインストールしますか？";
+"alert.install.playToolsInformative" = "PlayTools は、キーをタッチスクリーンやカスタム ディスプレイ解像度などにバインドできるツールですが、特定のアプリが動作しなくなる可能性があります";
+"button.Help" = "ヘルプ";
+"button.Dismiss" = "無視";
+"state.enabled" = "有効";
+"state.disabled" = "無効";
+"state.pendingReboot" = "保留中の再起動";
+"menubar.configSigning" = "コード署名設定";
+"configSigning.header" = "パッケージ署名の構成";
+"configSigning.info.SIP" = "AMFI をオフにするには、SIP を完全または部分的に無効にする必要があります。";
+"configSigning.subtext" = "パッケージ署名は、承認などの操作のための正しいチーム IDに\n依存するアプリの問題を修正するのに役立ちます。\nこの機能を有効にすると、セキュリティ リスクが生じる可能性があります。\n\nそのため、不要な場合は無効にすることをお勧めします";
+"configSigning.info.SIPHeader" = "System Integrity Protection";
+"configSigning.info.AMFI" = "アプリの偽の署名を許可し、正しいチーム ID で実行できるようにするには、AMFI をオフにする必要があります";
+"configSigning.info.AMFIHeader" = "Apple Mobile File Integrity";
+"configSigning.action.shutdown" = "macをシャットダウン";
+"configSigning.action.copyCommand" = "コマンドをコピー";
+"configSigning.action.restart" = "macを再起動";
+"configSigning.step.disableSIP" = "SIPをリカバリーモードから無効にしてください";
+"configSigning.step.disableAMFI" = "AMFIを無効にしてください";
+"configSigning.step.AMFIreboot" = "AMFIは無効化されました。再起動してください";
+"configSigning.step.complete" = "パッケージ署名が正常に構成されました";
+"configSigning.alert.copied" = "コマンドがコピーされました！";
+"configSigning.alert.info" = "コマンドを Terminalに貼り付けて実行してください。 Mac が再起動します";
+"alert.power.title" = "低電力モードが有効です！";
+"alert.power.subtitle" = "一部のアプリは、低電力モードが有効になっていると動作しません。 無効にすることをお勧めします。";
+"ipaLibrary.download" = "ダウンロード";
+"settings.text.debugger" = "デバッグ：";
+"ipaLibrary.version.older" = "これは他にインストールされているものよりも古いバージョンです";
+"ipaLibrary.version.same" = "すでにインストール済み";
+"ipaLibrary.version.newer" = "これは他にインストールされているものよりも新しいバージョンです";
+"ipaLibrary.alert.download" = "%@のこのバージョンをダウンロードしてもよろしいですか?";
+"alert.differentBundleIdKeymap.message" = "キーマップは別のアプリケーション用に作成された可能性があります。";
+"alert.differentBundleIdKeymap.text" = "このキーマップをインポートしてもよろしいですか?";
+"settings.toggle.lldb" = "LLDBで開く";
+"settings.toggle.lldbWithTerminal" = "ターミナルで開く";
+"settings.unavailable.hud" = "Metal HUDは利用できません";
+"error.failedToStripBinary" = "ファット バイナリで ARM64 arch が見つかりませんでした!";
+"settings.playChain.enable" = "PlayChain を有効にする (実験的)";
+"settings.playChain.help" = "このアプリケーションの PlayChain サポートを有効にして、(部分的に) Apple Keychain Services を使用できるようにします";
+"settings.playChain.debugging" = "PlayChain のデバッグ";
+"playapp.noSources.title" = "IPA がインストールされていません";
+"playapp.noSources.subtitle" = "現在、IPA はインストールされていません。 下のボタンをクリックしてインポートします。";
+"settings.tab.bypasses" = "回避";
+"playapp.download.integrityCheck" = "ファイルの整合性の検証中:";
+"playapp.download.differentChecksum" = "チェックサムが異なります！ インストールを続行しますか?";
+"playapp.download.differentChecksumDesc" = "期待される \"%@\", got \"%@\"";
+"playapp.progress.canceled" = "キャンセルされました";
+"playapp.importIPA" = "ipaをインポート";
+"preferences.toggle.removePlayChain" = "PlayChainを削除";
+"button.Reload" = "リロード";
+"playapp.clearPlayChain" = "PlayChain データを消去";
+"ipaLibrary.noNetworkConnection.required" = "IPAライブラリにはインターネット接続が必要です";
+"preferences.popover.duplicate" = "リンクを複製";
+"alert.app.clearPlayChain" = "すべての PlayChain データが消去されます。 アプリへの再ログインが必要になる場合があります。 続けますか?";
+"settings.highResolution" = "高解像度はクラッシュを引き起こす可能性があります";
+"settings.picker.windowFix" = "ウィンドウの問題を修正";
+"settings.picker.windowFix.help" = "アプリが正常に表示されるようにするウィンドウ修正を適用";
+"settings.picker.windowFixMethod.0" = "Normal";
+"settings.picker.windowFixMethod.1" = "代わり";
+"preferences.popover.checking" = "URLをチェックしています";
+"settings.toggle.introspection" = "イントロスペクション ライブラリを挿入する";
+"settings.toggle.introspection.help" = "システム イントロスペクション ライブラリをアプリに追加します。 一部のアプリが正しく起動しない問題を修正することが知られています";
+"settings.picker.scaler" = "解像度スケーラー";
+"button.Enable" = "有効化";
+"button.Reset" = "リセット";
+"button.Unlock" = "ロック解除";
+"settings.toggle.rootWorkDir" = "Start app at root directory";
+"settings.toggle.rootWorkDir.help" = "Change the working directory of the app to / just like on iOS. Turn this off if the app misbehave";
+"keycover.masterPassword" = "Master Password";
+"keycover.confirmMasterPassword" = "Confirm Master Password";
+"keycover.oldMasterPassword" = "Current Master Password";
+"keycover.error.blankPassword" = "Password cannot be blank";
+"keycover.error.notMatch" = "Passwords do not match";
+"keycover.error.incorrectPassword" = "Incorrect Password";
+"keycover.status.title" = "KeyCover Status:";
+"keycover.status.managedPassword" = "Enabled with Managed Password";
+"keycover.status.userPassword" = "Enabled with User Password";
+"keycover.status.chainCount" = "KeyCover Chain Status: ";
+"keycover.status.unlockedCount %@ %@" = "%@ unlocked chains in %@ total";
+"keycover.button.lockAll" = "Lock All Chains";
+"keycover.button.changePassword" = "Change Master Password";
+"keycover.toggle.startupPrompt" = "Prompt for KeyCover at startup";
+"keycover.toggle.startupPrompt.help" = "KeyCover will prompt for your master password when you launch the application. If this is disabled, it will be prompted when you launch an app that uses PlayChain.";
+"keycover.setup.useGeneratedKey" = "Managed Automatically";
+"keycover.setup.useUserKey" = "Use my own key";
+"keycover.setup.encryptionKey" = "Encryption Key: ";
+"keycover.setupPrompt.title" = "Enter a master password to use for KeyCover";
+"keycover.changePasswordPrompt.title" = "Enter your old master password and a new one to update your KeyCover encryption key";
+"keycover.removePrompt.title" = "Enter your master password to remove KeyCover encryption";
+"keycover.unlockPrompt.title" = "Enter your master password to unlock KeyCover";
+"keycover.alert.title" = "Keychain was not unlocked";
+"keycover.alert.content" = "Keychain access has been disabled for the current session";
+"settings.toggle.autoKM" = "Smart Keymap";
+"settings.toggle.autoKM.help" = "Automatically disable keymapping when text input is sensed";
+"settings.applicationCategoryType" = "Application Type";
+"settings.toggle.iosFrameworks" = "Force Insert iOS Frameworks";
+"settings.info.alias" = "Alias:";
+"settings.toggle.enableScrollWheel.help" = "Enable scroll wheel in keymapping";
+"settings.toggle.iosFrameworks.help" = "Add the system ios libraries to the app. Known to fix issues with some apps cannot find ios framework";
+"settings.toggle.enableScrollWheel" = "Enable Scroll Wheel";

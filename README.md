@@ -65,6 +65,12 @@ At the moment, PlayCover can only run on Apple Silicon Macs. Devices with the fo
 * M1 Max
 * M1 Ultra
 * M2
+* M2 Pro
+* M2 Max
+* M2 Ultra
+* M3
+* M3 Pro
+* M3 Max
 
 If you have an Intel Mac, you can explore alternatives like Bootcamp or emulators.
 
@@ -77,10 +83,11 @@ You can download stable releases [here](https://github.com/PlayCover/PlayCover/r
 To learn how to setup and use PlayCover, visit the documentation [here](https://playcover.github.io/PlayBook).
 
 ### Homebrew Cask
-We host a [Homebrew](https://brew.sh) tap with the [PlayCover cask](https://github.com/PlayCover/homebrew-playcover/blob/master/Casks/playcover-community.rb). To install from it:
+We host a [Homebrew](https://brew.sh) tap with the [PlayCover cask](https://github.com/PlayCover/homebrew-playcover/blob/master/Casks/playcover-community.rb). To install from it run:
 
-1. Tap `PlayCover/playcover` with `brew tap PlayCover/playcover`;
-2. Install PlayCover with `brew install --cask playcover-community`.
+```sh
+brew install --cask PlayCover/playcover/playcover-community
+```
 
 To uninstall:
 1. Remove PlayCover using `brew uninstall --cask playcover-community`;
@@ -95,22 +102,6 @@ To uninstall:
 
 Distributed under the GPLv3 License. See `LICENSE` for more information.
 
-### Disclaimer
-
-- This fork has been created by the community to support the development of PlayCover, since the original project became non-free and non-open-source.
-- This fork is not affiliated with the original project, nor the original author.
-- This fork is not affiliated with the website <https://playcover.me>.
-- If you have any questions, please ask the community for help first.
-- The original project is under GNU General Public License v3.0, so there is no legal issue to fork it and redistribute.
-
-If anyone feels like this fork somehow violates the copyright (e.g., the logo), please open an issue.
-
-Many things are under construction, so please be patient. Any contribution is welcome.
-
-This fork will always stay open-source and maintained by the community.
-
-<p align="right"><a href="#top">⬆️ Back to top️</a></p>
-
 
 
 <!-- CONTACT -->
@@ -118,7 +109,8 @@ This fork will always stay open-source and maintained by the community.
 
 Lucas Lee - playcover@lucas.icu
 
-<p align="right"><a href="#top">⬆️ Back to top️</a></p>
+Depal - depal@playcover.io
+
 
 
 
@@ -127,9 +119,11 @@ Lucas Lee - playcover@lucas.icu
 
 These open source libraries were used to create this project.
 
-* [appdecrypt](https://github.com/paradiseduo/appdecrypt/tree/main/Sources/appdecrypt)
-* [optool](https://github.com/alexzielenski/optool)
+* [inject](https://github.com/paradiseduo/inject)
 * [PTFakeTouch](https://github.com/Ret70/PTFakeTouch)
+* [DownloadManager](https://github.com/shapedbyiris/download-manager)
+* [DataCache](https://github.com/huynguyencong/DataCache)
+* [SwiftUI CachedAsyncImage](https://github.com/lorenzofiamingo/swiftui-cached-async-image)
 
 * Thanks to @iVoider for creating such a great project!
 

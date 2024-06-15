@@ -5,6 +5,35 @@
 
 import Foundation
 
+enum LSApplicationCategoryType: String, CaseIterable {
+    case business = "public.app-category.business"
+    case developerTools = "public.app-category.developer-tools"
+    case education = "public.app-category.education"
+    case entertainment = "public.app-category.entertainment"
+    case finance = "public.app-category.finance"
+    case games = "public.app-category.games"
+    case graphicsDesign = "public.app-category.graphics-design"
+    case healthcareFitness = "public.app-category.healthcare-fitness"
+    case lifestyle = "public.app-category.lifestyle"
+    case medical = "public.app-category.medical"
+    case music = "public.app-category.music"
+    case news = "public.app-category.news"
+    case photography = "public.app-category.photography"
+    case productivity = "public.app-category.productivity"
+    case reference = "public.app-category.reference"
+    case socialNetworking = "public.app-category.social-networking"
+    case sports = "public.app-category.sports"
+    case travel = "public.app-category.travel"
+    case utilities = "public.app-category.utilities"
+    case video = "public.app-category.video"
+    case weather = "public.app-category.weather"
+    case none = "public.app-category.none" // Note: This is not in an official category type
+
+    var localizedName: String {
+        NSLocalizedString(rawValue, comment: "")
+    }
+}
+
 public class AppInfo {
     public let url: URL
     fileprivate var rawStorage: NSMutableDictionary
@@ -27,7 +56,7 @@ public class AppInfo {
 
     public func retargeted(toURL url: URL) -> AppInfo {
         guard let copy = rawStorage.mutableCopy() as? NSMutableDictionary
-        else { fatalError("Failed to copy rawStorage")}
+        else { fatalError("Failed to copy rawStorage") }
         return AppInfo(url: url, rawStorage: copy)
     }
 
@@ -41,7 +70,7 @@ public class AppInfo {
         try write(toURL: url)
     }
 
-    subscript (string index: String) -> String? {
+    subscript(string index: String) -> String? {
         get {
             rawStorage[index] as? String
         }
@@ -50,7 +79,7 @@ public class AppInfo {
         }
     }
 
-    subscript (object index: String) -> NSObject? {
+    subscript(object index: String) -> NSObject? {
         get {
             rawStorage[index] as? NSObject
         }
@@ -59,7 +88,7 @@ public class AppInfo {
         }
     }
 
-    subscript (dictionary index: String) -> NSMutableDictionary? {
+    subscript(dictionary index: String) -> NSMutableDictionary? {
         get {
             rawStorage[index] as? NSMutableDictionary
         }
@@ -68,7 +97,7 @@ public class AppInfo {
         }
     }
 
-    subscript (strings index: String) -> [String]? {
+    subscript(strings index: String) -> [String]? {
         get {
             rawStorage[index] as? [String]
         }
@@ -77,7 +106,7 @@ public class AppInfo {
         }
     }
 
-    subscript (array index: String) -> NSMutableArray? {
+    subscript(array index: String) -> NSMutableArray? {
         get {
             rawStorage[index] as? NSMutableArray
         }
@@ -86,7 +115,7 @@ public class AppInfo {
         }
     }
 
-    subscript (numbers index: String) -> [NSNumber]? {
+    subscript(numbers index: String) -> [NSNumber]? {
         get {
             rawStorage[index] as? [NSNumber]
         }
@@ -95,7 +124,7 @@ public class AppInfo {
         }
     }
 
-    subscript (ints index: String) -> [Int]? {
+    subscript(ints index: String) -> [Int]? {
         get {
             rawStorage[index] as? [Int]
         }
@@ -104,7 +133,7 @@ public class AppInfo {
         }
     }
 
-    subscript (doubles index: String) -> [Double]? {
+    subscript(doubles index: String) -> [Double]? {
         get {
             rawStorage[index] as? [Double]
         }
@@ -113,7 +142,7 @@ public class AppInfo {
         }
     }
 
-    subscript (bool index: String) -> Bool? {
+    subscript(bool index: String) -> Bool? {
         get {
             rawStorage[index] as? Bool
         }
@@ -122,25 +151,29 @@ public class AppInfo {
         }
     }
 
-    var isGame: Bool {
-        let words = rawStorage.description
-            for keyword in AppInfo.keywords {
-                if  words.lowercased().contains(keyword) && !words.lowercased().contains("xbox") {
-                    return true
-                }
-            }
-            return false
+    var applicationCategoryType: LSApplicationCategoryType {
+        get {
+            LSApplicationCategoryType(
+                rawValue: self[string: "LSApplicationCategoryType"] ?? ""
+            ) ?? LSApplicationCategoryType.none
         }
-
-    private static var keywords = ["game", "unity",
-                                   "metal", "netflix",
-                                   "opengl", "minecraft",
-                                   "mihoyo", "xbox",
-                                   "disney", "opengl"]
+        set {
+            if newValue == .none {
+                rawStorage.removeObject(forKey: "LSApplicationCategoryType")
+            } else {
+                self[string: "LSApplicationCategoryType"] = newValue.rawValue
+            }
+            do {
+                try write()
+            } catch {
+                Log.shared.error(error)
+            }
+        }
+    }
 
     var minimumOSVersion: String {
         get {
-            self[string: "MinimumOSVersion"]!
+            self[string: "MinimumOSVersion"] ?? ""
         }
         set {
             self[string: "MinimumOSVersion"] = newValue
@@ -148,32 +181,90 @@ public class AppInfo {
     }
 
     var bundleName: String {
-        if self[string: "CFBundleName"] == nil {
-            return self[string: "CFBundleDisplayName"]!
+        if self[string: "CFBundleName"] == nil || self[string: "CFBundleName"] == "" {
+            return self[string: "CFBundleDisplayName"] ?? ""
         } else {
-            return self[string: "CFBundleName"]!
+            return self[string: "CFBundleName"] ?? ""
         }
     }
 
     var displayName: String {
-        if self[string: "CFBundleDisplayName"] == nil {
-            return self[string: "CFBundleName"]!
+        if self[string: "CFBundleDisplayName"] == nil || self[string: "CFBundleDisplayName"] == "" {
+            return self[string: "CFBundleName"] ?? ""
         } else {
-            return self[string: "CFBundleDisplayName"]!
+            return self[string: "CFBundleDisplayName"] ?? ""
         }
     }
 
     var bundleIdentifier: String {
-        self[string: "CFBundleIdentifier"]!
+        self[string: "CFBundleIdentifier"] ?? ""
     }
 
     var executableName: String {
-        self[string: "CFBundleExecutable"]!
+        self[string: "CFBundleExecutable"] ?? ""
+    }
+
+    var bundleVersion: String {
+        self[string: "CFBundleShortVersionString"] ?? ""
+    }
+
+    var primaryIconName: String {
+        if let bundleIconDict = self[dictionary: "CFBundleIcons~ipad"] {
+            if let primaryBundleIconDict: [String: Any] = bundleIconDict["CFBundlePrimaryIcon"] as? [String: Any] {
+                if let bundleIconFiles = primaryBundleIconDict["CFBundleIconFiles"] as? [String] {
+                    let primaryIconName = bundleIconFiles[bundleIconFiles.count - 1]
+                    return primaryIconName
+                }
+            }
+        }
+
+        if let bundleIconDict = self[dictionary: "CFBundleIcons"] {
+            if let primaryBundleIconDict: [String: Any] = bundleIconDict["CFBundlePrimaryIcon"] as? [String: Any] {
+                if let bundleIconFiles = primaryBundleIconDict["CFBundleIconFiles"] as? [String] {
+                    let primaryIconName = bundleIconFiles[bundleIconFiles.count - 1]
+                    return primaryIconName
+                }
+            }
+        }
+
+        if let bundleIconFiles = self[strings: "CFBundleIconFiles"] {
+            let primaryIconName = bundleIconFiles[bundleIconFiles.count - 1]
+            return primaryIconName
+        }
+
+        return "AppIcon"
+    }
+
+    var lsEnvironment: [String: String] {
+        get {
+            if self[dictionary: "LSEnvironment"] == nil {
+                self[dictionary: "LSEnvironment"] = NSMutableDictionary(dictionary: [String: String]())
+            }
+
+            return self[dictionary: "LSEnvironment"] as? [String: String] ?? [:]
+        }
+        set {
+            if self[dictionary: "LSEnvironment"] == nil {
+                self[dictionary: "LSEnvironment"] = NSMutableDictionary(dictionary: [String: String]())
+            }
+
+            if let key = newValue.first?.key, let value = newValue.first?.value {
+                self[dictionary: "LSEnvironment"]?[key] = value
+
+                do {
+                    try write()
+                } catch {
+                    Log.shared.error(error)
+                }
+            }
+        }
     }
 
     func assert(minimumVersion: Double) {
-        if Double(minimumOSVersion)! > 11.0 {
-            minimumOSVersion = Int(minimumVersion).description
+        if let double = Double(minimumOSVersion) {
+            if double > 11.0 {
+                minimumOSVersion = Int(minimumVersion).description
+            }
         }
     }
 }

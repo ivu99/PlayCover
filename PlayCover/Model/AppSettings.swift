@@ -3,14 +3,154 @@
 //  PlayCover
 //
 
+import AppKit
 import Foundation
 import UniformTypeIdentifiers
-import AppKit
 
-let notchModels = [ "MacBookPro18,3", "MacBookPro18,4", "MacBookPro18,1", "MacBookPro18,2", "Mac14,2"]
+struct AppSettingsData: Codable {
+    var bundleIdentifier: String = ""
+
+    var keymapping = true
+    var sensitivity: Float = 50
+
+    var disableTimeout = false
+    var iosDeviceModel = "iPad13,8"
+    var windowWidth = 1920
+    var windowHeight = 1080
+    var customScaler = 2.0
+    var resolution = 1
+    var aspectRatio = 1
+    var notch: Bool = NSScreen.hasNotch()
+    var bypass = false
+    var discordActivity = DiscordActivity()
+    var version = "3.0.0"
+    var playChain = true
+    var playChainDebugging = false
+    var inverseScreenValues = false
+    var metalHUD = false {
+        didSet {
+            do {
+                try Shell.setMetalHUD(bundleIdentifier, enabled: metalHUD)
+            } catch {
+                Log.shared.error(error)
+            }
+        }
+    }
+    var windowFixMethod = 0
+    var injectIntrospection = false
+    var rootWorkDir = true
+    var noKMOnInput = true
+    var enableScrollWheel = true
+
+    init() {}
+
+    // handle old 2.x settings where PlayChain did not exist yet
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        bundleIdentifier = try container.decodeIfPresent(String.self, forKey: .bundleIdentifier) ?? ""
+        keymapping = try container.decodeIfPresent(Bool.self, forKey: .keymapping) ?? true
+        sensitivity = try container.decodeIfPresent(Float.self, forKey: .sensitivity) ?? 50
+        disableTimeout = try container.decodeIfPresent(Bool.self, forKey: .disableTimeout) ?? false
+        iosDeviceModel = try container.decodeIfPresent(String.self, forKey: .iosDeviceModel) ?? "iPad13,8"
+        windowWidth = try container.decodeIfPresent(Int.self, forKey: .windowWidth) ?? 1920
+        windowHeight = try container.decodeIfPresent(Int.self, forKey: .windowHeight) ?? 1080
+        customScaler = try container.decodeIfPresent(Double.self, forKey: .customScaler) ?? 2.0
+        resolution = try container.decodeIfPresent(Int.self, forKey: .resolution) ?? 1
+        aspectRatio = try container.decodeIfPresent(Int.self, forKey: .aspectRatio) ?? 1
+        notch = try container.decodeIfPresent(Bool.self, forKey: .notch) ?? NSScreen.hasNotch()
+        bypass = try container.decodeIfPresent(Bool.self, forKey: .bypass) ?? false
+        discordActivity = try container.decodeIfPresent(DiscordActivity.self,
+                                                        forKey: .discordActivity) ?? DiscordActivity()
+        version = try container.decodeIfPresent(String.self, forKey: .version) ?? "3.0.0"
+        playChain = try container.decodeIfPresent(Bool.self, forKey: .playChain) ?? true
+        playChainDebugging = try container.decodeIfPresent(Bool.self, forKey: .playChainDebugging) ?? false
+        inverseScreenValues = try container.decodeIfPresent(Bool.self, forKey: .inverseScreenValues) ?? false
+        metalHUD = try container.decodeIfPresent(Bool.self, forKey: .metalHUD) ?? false
+        windowFixMethod = try container.decodeIfPresent(Int.self, forKey: .windowFixMethod) ?? 0
+        injectIntrospection = try container.decodeIfPresent(Bool.self, forKey: .injectIntrospection) ?? false
+        rootWorkDir = try container.decodeIfPresent(Bool.self, forKey: .rootWorkDir) ?? true
+        noKMOnInput = try container.decodeIfPresent(Bool.self, forKey: .noKMOnInput) ?? true
+        enableScrollWheel = try container.decodeIfPresent(Bool.self, forKey: .enableScrollWheel) ?? true
+    }
+}
+
+class AppSettings {
+    static var appSettingsDir: URL {
+        let settingsFolder =
+            PlayTools.playCoverContainer.appendingPathComponent("App Settings")
+        if !FileManager.default.fileExists(atPath: settingsFolder.path) {
+            do {
+                try FileManager.default.createDirectory(at: settingsFolder,
+                                                        withIntermediateDirectories: true,
+                                                        attributes: [:])
+            } catch {
+                Log.shared.error(error)
+            }
+        }
+        return settingsFolder
+    }
+
+    let info: AppInfo
+    let settingsUrl: URL
+    var openWithLLDB: Bool = false
+    var openLLDBWithTerminal: Bool = true
+    var settings: AppSettingsData {
+        didSet {
+            encode()
+        }
+    }
+
+    init(_ info: AppInfo) {
+        self.info = info
+        settingsUrl = AppSettings.appSettingsDir.appendingPathComponent(info.bundleIdentifier)
+                                                .appendingPathExtension("plist")
+        settings = AppSettingsData()
+        if !decode() {
+            encode()
+        }
+
+        settings.bundleIdentifier = info.bundleIdentifier
+    }
+
+    public func sync() {
+        settings.notch = NSScreen.hasNotch()
+    }
+
+    public func reset() {
+        settings = AppSettingsData()
+    }
+
+    @discardableResult
+    public func decode() -> Bool {
+        do {
+            let data = try Data(contentsOf: settingsUrl)
+            settings = try PropertyListDecoder().decode(AppSettingsData.self, from: data)
+            return true
+        } catch {
+            print(error)
+            return false
+        }
+    }
+
+    @discardableResult
+    public func encode() -> Bool {
+        let encoder = PropertyListEncoder()
+        encoder.outputFormat = .xml
+
+        do {
+            let data = try encoder.encode(settings)
+            try data.write(to: settingsUrl)
+            return true
+        } catch {
+            print(error)
+            return false
+        }
+    }
+}
+
+let notchModels = ["MacBookPro18,3", "MacBookPro18,4", "MacBookPro18,1", "MacBookPro18,2", "Mac14,2"]
 
 extension NSScreen {
-
     public static func hasNotch() -> Bool {
         if let model = NSScreen.getMacModel() {
             return notchModels.contains(model)
@@ -20,8 +160,7 @@ extension NSScreen {
     }
 
     private static func getMacModel() -> String? {
-        let service = IOServiceGetMatchingService(kIOMainPortDefault,
-                                                  IOServiceMatching("IOPlatformExpertDevice"))
+        let service = IOServiceGetMatchingService(kIOMainPortDefault, IOServiceMatching("IOPlatformExpertDevice"))
         var modelIdentifier: String?
 
         if let modelData = IORegistryEntryCreateCFProperty(service, "model" as CFString, kCFAllocatorDefault, 0)
@@ -30,337 +169,7 @@ extension NSScreen {
                 modelIdentifier = String(cString: modelIdentifierCString)
             }
         }
-
         IOObjectRelease(service)
         return modelIdentifier
     }
-
-}
-
-class AppSettings {
-
-    let info: AppInfo
-    var container: AppContainer?
-
-    public static let settingsUrl = URL(fileURLWithPath: "/Users/\(NSUserName())/Library/Preferences/playcover.plist")
-
-    public func sync() {
-        notch = NSScreen.hasNotch()
-    }
-
-    private static let gamingMode = "pc.gamingMode"
-    var gamingMode: Bool {
-        get {
-            return dictionary[AppSettings.gamingMode] as? Bool ?? info.isGame
-        }
-        set {
-            var dict = dictionary
-            dict[AppSettings.gamingMode] = newValue
-            dictionary = dict
-        }
-    }
-
-    private static let notch = "pc.hasNotch"
-    var notch: Bool {
-        get {
-            return NSScreen.hasNotch()
-        }
-        set {
-            var dict = dictionary
-            dict[AppSettings.notch] = newValue
-            dictionary = dict
-        }
-    }
-
-    private static let layout = "pc.layout"
-    var layout: [[CGFloat]] {
-        get {
-            return dictionary[AppSettings.layout] as? Array ?? []
-        }
-        set {
-            var dict = dictionary
-            dict[AppSettings.layout] = newValue
-            dictionary = dict
-        }
-    }
-
-    private static let sensivity = "pc.sensivity", refreshRate = "pc.refreshRate"
-    var sensivity: Float {
-        get {
-            return dictionary[AppSettings.sensivity] as? Float ?? 50
-        }
-        set {
-            var dict = dictionary
-            dict[AppSettings.sensivity] = newValue
-            dictionary = dict
-        }
-    }
-
-    var refreshRate: Int {
-        get {
-            return dictionary[AppSettings.refreshRate] as? Int ?? 60
-        }
-        set {
-            var dict = dictionary
-            dict[AppSettings.refreshRate] = newValue
-            dictionary = dict
-        }
-    }
-        private static let gameWindowSizeHeight = "pc.gameWindowSizeHeight"
-        private static let gameWindowSizeWidth = "pc.gameWindowSizeWidth"
-        private static let enableWindowAutoSize = "pc.enableWindowAutoSize"
-        private static let enableCustomWindowSize = "pc.enableCustomWindowSize"
-
-        var enableWindowAutoSize: Bool {
-            get {
-                return (dictionary[AppSettings.enableWindowAutoSize] as? Bool ?? true)
-            }
-            set {
-                var dict = dictionary
-                dict[AppSettings.enableWindowAutoSize] = newValue
-                dictionary = dict
-            }
-        }
-        var enableCustomWindowSize: Bool {
-            get {
-                return (dictionary[AppSettings.enableCustomWindowSize] as? Bool ?? false)
-            }
-            set {
-                var dict = dictionary
-                dict[AppSettings.enableCustomWindowSize] = newValue
-                dictionary = dict
-            }
-        }
-
-        var gameWindowSizeHeight: Float {
-            get {
-                return dictionary[AppSettings.gameWindowSizeHeight] as? Float ?? 1080
-            }
-            set {
-                var dict = dictionary
-                dict[AppSettings.gameWindowSizeHeight] = newValue
-                dictionary = dict
-            }
-        }
-
-        var gameWindowSizeWidth: Float {
-            get {
-                return dictionary[AppSettings.gameWindowSizeWidth] as? Float ?? 1920
-            }
-            set {
-                var dict = dictionary
-                dict[AppSettings.gameWindowSizeWidth] = newValue
-                dictionary = dict
-            }
-        }
-
-    private static let bypass = "pc.bypass"
-    var bypass: Bool {
-        get {
-            return dictionary[AppSettings.bypass] as? Bool ?? false
-        }
-        set {
-            var dict = dictionary
-            dict[AppSettings.bypass] = newValue
-            dictionary = dict
-        }
-    }
-    private static let keymapping = "pc.keymapping"
-    var keymapping: Bool {
-        get {
-            return dictionary[AppSettings.keymapping] as? Bool ?? info.isGame
-        }
-        set {
-            var dict = dictionary
-            dict[AppSettings.keymapping] = newValue
-            dictionary = dict
-        }
-    }
-
-    private static let adaptiveDisplay = "pc.adaptiveDisplay"
-    var adaptiveDisplay: Bool {
-        get {
-            dictionary[AppSettings.adaptiveDisplay] as? Bool ?? info.isGame
-        }
-        set {
-            var dict = dictionary
-            dict[AppSettings.adaptiveDisplay] = newValue
-            dictionary = dict
-        }
-    }
-
-    private static let disableTimeout = "pc.disableTimeout"
-    var disableTimeout: Bool {
-        get {
-            dictionary[AppSettings.disableTimeout] as? Bool ?? false
-        }
-        set {
-            var dict = dictionary
-            dict[AppSettings.disableTimeout] = newValue
-            dictionary = dict
-        }
-    }
-    private static let ipadModel = "pc.ipadModel"
-    var ipadModel: String {
-        get {
-            dictionary[AppSettings.ipadModel] as? String ?? "iPad8,6"
-        }
-        set {
-            var dict = dictionary
-            dict[AppSettings.ipadModel] = newValue
-            dictionary = dict
-        }
-    }
-
-    private var allPrefs: [String: Any] {
-        get {
-            do {
-                if let all = try [String: Any].read(AppSettings.settingsUrl) {
-                    if !all.isEmpty {
-                        return all
-                    }
-                }
-            } catch {
-                Log.shared.error(error)
-            }
-            return [:]
-        }
-        set {
-            do {
-                try newValue.store(AppSettings.settingsUrl)
-            } catch {
-                Log.shared.error(error)
-            }
-        }
-    }
-
-    private var dictionary: [String: Any] {
-        get {
-            if let prefs = allPrefs[info.bundleIdentifier] as? [String: Any] {
-                return prefs
-            } else {
-                return [AppSettings.keymapping: info.isGame, AppSettings.adaptiveDisplay: info.isGame]
-            }
-        }
-        set {
-            var prefs = allPrefs
-            prefs[info.bundleIdentifier] = newValue
-            allPrefs = prefs
-        }
-    }
-
-    func reset() {
-        allPrefs.removeValue(forKey: info.bundleIdentifier)
-        createSettingsIfNotExists()
-    }
-
-    init(_ info: AppInfo, container: AppContainer?) {
-        self.info = info
-        self.container = container
-        createSettingsIfNotExists()
-    }
-
-    private func createSettingsIfNotExists() {
-        if !fileMgr.fileExists(atPath: AppSettings.settingsUrl.path) || allPrefs[info.bundleIdentifier] == nil {
-            dictionary = [AppSettings.keymapping: info.isGame,
-                                      AppSettings.adaptiveDisplay: info.isGame,
-                                      AppSettings.refreshRate: 60,
-                                      AppSettings.sensivity: 50,
-                                      AppSettings.gameWindowSizeHeight: 1080,
-                                      AppSettings.gameWindowSizeWidth: 1920,
-                                      AppSettings.enableWindowAutoSize: false,
-                                      AppSettings.enableCustomWindowSize: false,
-                                      AppSettings.ipadModel: "iPad8,6"
-                                      ]
-        }
-    }
-
-    public func export() {
-                    let openPanel = NSOpenPanel()
-                    openPanel.canChooseFiles = false
-                    openPanel.allowsMultipleSelection = false
-                    openPanel.canChooseDirectories = true
-                    openPanel.canCreateDirectories = true
-                    openPanel.title = "Choose a place to export keymapping to"
-
-                    openPanel.begin { (result) in
-                        if result == .OK {
-                            do {
-                                let selectedPath = openPanel.url!
-                                    .appendingPathComponent(self.info.bundleIdentifier)
-                                    .appendingPathExtension("playmap")
-                                try self.dictionary.store(selectedPath)
-                                selectedPath.openInFinder()
-                            } catch {
-                                openPanel.close()
-                                Log.shared.error(error)
-                            }
-                            openPanel.close()
-                        }
-                    }
-        }
-
-    public func importOf(returnCompletion: @escaping (URL?) -> Void) {
-        let openPanel = NSOpenPanel()
-        openPanel.canChooseFiles = true
-        openPanel.allowsMultipleSelection = false
-        openPanel.canChooseDirectories = false
-        openPanel.canCreateDirectories = true
-        openPanel.allowedContentTypes = [UTType(exportedAs: "io.playcover.PlayCover-playmap")]
-        openPanel.title = "Select a valid file ending in .playmap"
-
-        openPanel.begin { (result) in
-            if result == .OK {
-                do {
-                    if let selectedPath = openPanel.url {
-                        if let newPrefs = try [String: Any].read(selectedPath) {
-                            if !newPrefs.isEmpty {
-                                self.dictionary = newPrefs
-                                returnCompletion(selectedPath)
-                            } else {
-                                returnCompletion(nil)
-                            }
-                        }
-                    }
-                } catch {
-                    returnCompletion(nil)
-                    openPanel.close()
-                    Log.shared.error(error)
-                }
-                openPanel.close()
-            }
-        }
-    }
-
-}
-
-extension Dictionary {
-
-    func store(_ toUrl: URL) throws {
-        let data = try PropertyListSerialization.data(fromPropertyList: self, format: .xml, options: 0)
-        try data.write(to: toUrl)
-    }
-
-    static func read( _ from: URL) throws -> Dictionary? {
-        var format = PropertyListSerialization.PropertyListFormat.xml
-        if let data = FileManager.default.contents(atPath: from.path) {
-            return try PropertyListSerialization
-                .propertyList(from: data,
-                              options: .mutableContainersAndLeaves,
-                              format: &format) as? Dictionary
-        }
-        return nil
-    }
-
-    static func read( _ from: String) throws -> Dictionary? {
-        var format = PropertyListSerialization.PropertyListFormat.xml
-        if let data = from.data(using: .utf8) {
-            return try PropertyListSerialization
-                .propertyList(from: data,
-                              options: .mutableContainersAndLeaves,
-                              format: &format) as? Dictionary
-        }
-        return nil
-    }
-
 }

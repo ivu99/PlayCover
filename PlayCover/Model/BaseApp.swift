@@ -14,15 +14,18 @@ public class BaseApp {
     public var url: URL
 
     public var executable: URL {
-        return url.appendingPathComponent(info.executableName)
+        url.appendingEscapedPathComponent(info.executableName)
     }
 
     public var entitlements: URL {
-        return Entitlements.playCoverEntitlementsDir.appendingPathComponent("\(info.bundleIdentifier).plist")
+        Entitlements.playCoverEntitlementsDir
+            .appendingPathComponent(info.bundleIdentifier)
+            .appendingPathExtension("plist")
     }
 
     init(appUrl: URL) {
-        self.url = appUrl
-        self.info = AppInfo(contentsOf: url.appendingPathComponent("Info.plist"))
+        url = appUrl
+        info = AppInfo(contentsOf: url.appendingPathComponent("Info")
+                                      .appendingPathExtension("plist"))
     }
 }
